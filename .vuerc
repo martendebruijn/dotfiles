@@ -1,0 +1,95 @@
+{
+  "useTaobaoRegistry": false,
+  "packageManager": "yarn",
+  "presets": {
+    "my-vue-preset": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-router": {
+          "historyMode": false
+        },
+        "@vue/cli-plugin-vuex": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "prettier",
+          "lintOn": [
+            "save"
+          ]
+        },
+        "@vue/cli-plugin-unit-jest": {},
+        "@vue/cli-plugin-e2e-cypress": {}
+      },
+      "vueVersion": "3",
+      "cssPreprocessor": "node-sass"
+    },
+    "without-node-sass-error": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-router": {
+          "historyMode": false
+        },
+        "@vue/cli-plugin-vuex": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "prettier",
+          "lintOn": [
+            "save"
+          ]
+        },
+        "@vue/cli-plugin-unit-jest": {},
+        "@vue/cli-plugin-e2e-cypress": {}
+      },
+      "vueVersion": "3"
+    },
+    "martendebruijn.nl": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-router": {
+          "historyMode": false
+        },
+        "@vue/cli-plugin-vuex": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "prettier",
+          "lintOn": [
+            "save"
+          ]
+        },
+        "@vue/cli-plugin-unit-jest": {},
+        "@vue/cli-plugin-e2e-cypress": {}
+      },
+      "vueVersion": "3",
+      "cssPreprocessor": "dart-sass"
+    },
+    "myDefault without vuex and router": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "prettier",
+          "lintOn": [
+            "save"
+          ]
+        }
+      },
+      "vueVersion": "3",
+      "cssPreprocessor": "node-sass"
+    },
+    "myDef without vuex + router dart-sass": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "prettier",
+          "lintOn": [
+            "save"
+          ]
+        }
+      },
+      "vueVersion": "3",
+      "cssPreprocessor": "dart-sass"
+    }
+  },
+  "latestVersion": "5.0.4",
+  "lastChecked": 1648062563741
+}
