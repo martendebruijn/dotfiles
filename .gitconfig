@@ -1,6 +1,7 @@
 [user]
 	name = martendebruijn
 	email = marten@martendebruijn.nl
+	signingkey = C6F06D1A54F47BFD
 
 [core]
 	excludesfile = /Users/martendebruijn/.gitignore_global
@@ -12,3 +13,7 @@
 
 [url "git@github.com:martendebruijn/"]
 	insteadOf = https://github.com/martendebruijn/
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
