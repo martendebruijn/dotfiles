@@ -1,0 +1,14 @@
+# Top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = 1f
+insert_final_newline = true
+
+# Default charset
+[*.js]
+charset = utf-8
+
+indent_style = space
+indent_size = 2
