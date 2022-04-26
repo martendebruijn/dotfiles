@@ -1,0 +1,42 @@
+alias c="clear"
+
+# config files repo
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+
+# cd
+alias devm="cd ~/Documents/business/mozard-coding-projects"
+alias devp="cd ~/Documents/personal/personal-coding-projects"
+alias ozsh="open ~/.zshrc"
+alias uzsh="source ~/.zshrc"
+alias oalias="open ~/.zsh_aliases"
+alias devmf="cd ~/Documents/business/mozard-coding-projects/mozard-frontend/"
+
+# homebrew
+alias brew:up="brew update; brew doctor; brew cleanup"
+alias brew:i="brew install"
+alias brew:old="brew outdated"
+alias brew:ui="brew uninstall"
+alias brew:ls="brew list --versions"
+alias brew:ug="brew upgrade"
+
+alias what-time="date '+%H:%M:%S'"
+
+# git
+# also see the documentation of the git aliases oh my zsh plugin
+alias gstsa="git stash save"
+alias gadot="git add ."
+alias gblst="git branch --list"
+
+# git commits
+alias gcfeat="git commit -m '✨feat"
+alias gcbug="git commit -m '🐛bug"
+alias gcfix="git commit -m '🔨fix"
+alias gcchore="git commit -m '🔧chore"
+alias gcdoc="git commit -m '📝docs"
+alias gcaccess="git commit -m '♿a11y"
+alias gcup="git commit -m '⬆chore"
+alias gcclean="git commit -m '🧹cleaning"
+alias gcrefact="git commit -m '🔁refactor" 
+
+alias ysb="yarn storybook"
+
