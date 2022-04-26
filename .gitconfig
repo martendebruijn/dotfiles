@@ -1,0 +1,14 @@
+[user]
+	name = martendebruijn
+	email = marten@martendebruijn.nl
+
+[core]
+	excludesfile = /Users/martendebruijn/.gitignore_global
+	editor = code -w
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+
+[url "git@github.com:martendebruijn/"]
+	insteadOf = https://github.com/martendebruijn/
