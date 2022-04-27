@@ -3,7 +3,7 @@
 	email = marten@martendebruijn.nl
 	signingkey = C6F06D1A54F47BFD
 [core]
-	excludesfile = /Users/martendebruijn/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = code -w
 [pull]
 	rebase = false
