@@ -2,7 +2,6 @@
 	name = martendebruijn
 	email = marten@martendebruijn.nl
 	signingkey = C6F06D1A54F47BFD
-
 [core]
 	excludesfile = /Users/martendebruijn/.gitignore_global
 	editor = code -w
@@ -10,7 +9,6 @@
 	rebase = false
 [init]
 	defaultBranch = main
-
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [url "git@gitlab.com:"]
