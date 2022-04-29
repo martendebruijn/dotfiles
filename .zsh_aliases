@@ -27,16 +27,6 @@ alias gstsa="git stash save"
 alias gadot="git add ."
 alias gblst="git branch --list"
 
-# git commits
-alias gcfeat="git commit -m '✨feat"
-alias gcbug="git commit -m '🐛bug"
-alias gcfix="git commit -m '🔨fix"
-alias gcchore="git commit -m '🔧chore"
-alias gcdoc="git commit -m '📝docs"
-alias gcaccess="git commit -m '♿a11y"
-alias gcup="git commit -m '⬆chore"
-alias gcclean="git commit -m '🧹cleaning"
-alias gcrefact="git commit -m '🔁refactor" 
 
 alias ysb="yarn storybook"
 
