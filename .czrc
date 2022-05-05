@@ -1,1 +1,4 @@
-{ "path": "cz-emoji-conventional" }
+{
+  "path": "cz-emoji-conventional",
+  "disableScopeLowerCase": true
+}
