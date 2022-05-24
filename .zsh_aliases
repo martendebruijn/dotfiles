@@ -14,7 +14,7 @@ alias oalias="open ~/.zsh_aliases"
 alias devmf="cd ~/Documents/business/mozard-coding-projects/mozard-frontend/"
 
 # homebrew
-alias brew:up="brew update; brew doctor; brew cleanup"
+alias brew:up="brew update; brew doctor; brew autoremove; brew cleanup"
 alias brew:i="brew install"
 alias brew:old="brew outdated"
 alias brew:ui="brew uninstall"
@@ -31,4 +31,3 @@ alias gblst="git branch --list"
 
 
 alias ysb="yarn storybook"
-
