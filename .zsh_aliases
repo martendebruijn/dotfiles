@@ -1,7 +1,9 @@
 alias c="clear"
 
 # config files repo
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+alias ssha='eval `ssh-agent` ssh-add' 
 
 # cd
 alias devm="cd ~/Documents/business/mozard-coding-projects"
@@ -12,10 +14,6 @@ alias oalias="open ~/.zsh_aliases"
 alias devmf="cd ~/Documents/business/mozard-coding-projects/mozard-frontend/"
 
 # homebrew
-# Note that gitconfig will replace all https git urls to ssh, so it needs your password
-# if you get an error like: Error: Fetching /opt/homebrew failed! Use the following, and it will work:
-# eval `ssh-agent`
-# ssh-add
 alias brew:up="brew update; brew doctor; brew cleanup"
 alias brew:i="brew install"
 alias brew:old="brew outdated"
