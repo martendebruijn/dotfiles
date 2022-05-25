@@ -2,6 +2,7 @@ alias c="clear"
 
 # config files repo
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias pconfig='/usr/bin/git --git-dir=$HOME/private-dotfiles/ --work-tree=$HOME'
 
 alias ssha='eval `ssh-agent` ssh-add' 
 
