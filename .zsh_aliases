@@ -14,9 +14,9 @@ alias ssha="eval `ssh-agent` ssh-add"
 # cd
 alias devm="cd ~/Documents/business/mozard-coding-projects"
 alias devp="cd ~/Documents/personal/personal-coding-projects"
-alias ozsh="open ~/.zshrc"
+alias ozsh="code ~/.zshrc"
 alias uzsh="source ~/.zshrc"
-alias oalias="open ~/.zsh_aliases"
+alias oalias="code ~/.zsh_aliases"
 alias devmf="cd ~/Documents/business/mozard-coding-projects/mozard-frontend/"
 
 # homebrew
