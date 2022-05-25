@@ -26,6 +26,7 @@ alias brew:old="brew outdated"
 alias brew:ui="brew uninstall"
 alias brew:ls="brew list --versions"
 alias brew:ug="brew upgrade"
+alias update-brewfile="brew bundle dump --force"
 
 alias what-time="date '+%H:%M:%S'"
 
