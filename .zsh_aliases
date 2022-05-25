@@ -1,10 +1,15 @@
 alias c="clear"
 
 # config files repo
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias pconfig='/usr/bin/git --git-dir=$HOME/private-dotfiles/ --work-tree=$HOME'
+alias cfg="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias pcfg="/usr/bin/git --git-dir=$HOME/.dotfiles_private/ --work-tree=$HOME"
+alias cfgp="cfg push origin; cfg push gitlab"
+alias cfga="cfg add"
+alias cfgst="cfg status"
+alias pcfga="pcfg add"
+alias pcfgst="pcfg status"
 
-alias ssha='eval `ssh-agent` ssh-add' 
+alias ssha="eval `ssh-agent` ssh-add"
 
 # cd
 alias devm="cd ~/Documents/business/mozard-coding-projects"
@@ -29,6 +34,5 @@ alias what-time="date '+%H:%M:%S'"
 alias gstsa="git stash save"
 alias gadot="git add ."
 alias gblst="git branch --list"
-
 
 alias ysb="yarn storybook"
