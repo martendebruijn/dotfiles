@@ -1,6 +1,6 @@
 [user]
 	name = martendebruijn
-	email = marten@martendebruijn.nl
+	email = marten@debruijn.io
 	signingkey = C6F06D1A54F47BFD
 [core]
 	excludesfile = ~/.gitignore_global
