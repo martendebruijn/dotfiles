@@ -1,26 +1,15 @@
-alias c="clear"
-
-# config files repo
-alias cfg="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias pcfg="/usr/bin/git --git-dir=$HOME/.dotfiles_private/ --work-tree=$HOME"
-alias cfgp="cfg push origin; cfg push gitlab"
-alias cfga="cfg add"
-alias cfgst="cfg status"
-alias pcfga="pcfg add"
-alias pcfgst="pcfg status"
-
-alias ssha="eval `ssh-agent` ssh-add"
-
 # cd
 alias devm="cd ~/Documents/business/mozard-coding-projects"
 alias devp="cd ~/Documents/personal/personal-coding-projects"
+alias devmf="cd ~/Documents/business/mozard-coding-projects/mozard-frontend/"
+
+# Open/update
 alias ozsh="code ~/.zshrc"
 alias uzsh="source ~/.zshrc"
 alias oalias="code ~/.zsh_aliases"
-alias devmf="cd ~/Documents/business/mozard-coding-projects/mozard-frontend/"
 
-# homebrew
-alias brew:up="brew update; brew upgrade; brew doctor; brew autoremove; brew cleanup"
+# Homebrew
+alias brew:up="brew update; brew upgrade; brew autoremove; brew cleanup; brew doctor;"
 alias brew:i="brew install"
 alias brew:old="brew outdated"
 alias brew:ui="brew uninstall"
@@ -28,12 +17,16 @@ alias brew:ls="brew list --versions"
 alias brew:ug="brew upgrade"
 alias update-brewfile="brew bundle dump --force"
 
-alias what-time="date '+%H:%M:%S'"
-
-# git
+# Git
 # also see the documentation of the git aliases oh my zsh plugin
 alias gstsa="git stash save"
 alias gadot="git add ."
 alias gblst="git branch --list"
 
+# Yarn
 alias ysb="yarn storybook"
+
+# Misc
+alias what-time="date '+%H:%M:%S'"
+alias c="clear"
+alias ssha="eval `ssh-agent` ssh-add"
