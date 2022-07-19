@@ -1,7 +1,7 @@
 [user]
 	name = martendebruijn
 	email = marten@debruijn.io
-	signingkey = C6F06D1A54F47BFD
+	signingkey = F37BDA3A510F8695
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = code -w
