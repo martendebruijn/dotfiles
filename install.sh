@@ -33,4 +33,4 @@ done
 cd ../
 echo 🤐Creating .zshenv...
 cp ./zsh/.zshenv.example ~/.zshenv
-echo ✅Made .zshenv\nPlease enter all the environment variables
+echo "✅Made .zshenv\nPlease enter all the environment variables"
