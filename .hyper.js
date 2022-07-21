@@ -1,26 +1,12 @@
 module.exports = {
   config: {
-    // default font size in pixels for all tabs
     fontSize: 12.5,
-
-    // font family with optional fallbacks
     fontFamily:
       '"Meslo LG S for Powerline", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
-
-    // terminal cursor background color (hex)
     cursorColor: "rgba(255,255,255,.4)",
-
-    // color of the text
     foregroundColor: "rgb(131,148,150)",
-
-    // terminal background color
-    // backgroundColor: "rgba(2, 40, 50, 1)",
     backgroundColor: "#293462",
-
-    // border color (window, tabs)
     borderColor: "rgba(255,255,255,.1)",
-
-    // custom css to embed in the main window
     css: `
       .header_header {
         background: transparent!important;
@@ -38,13 +24,8 @@ module.exports = {
         color: #96d4e4;
       }
     `,
-
-    // custom padding (css format, i.e.: `top right bottom left`)
     termCSS: "",
-
-    // custom padding
     padding: "0px 5px",
-
     // some color overrides. see http://bit.ly/29k1iU2 for
     // the full list
     colors: [
@@ -66,15 +47,8 @@ module.exports = {
       "#93a1a1",
     ],
   },
-
-  // a list of plugins to fetch and install from npm
   // format: [@org/]project[#version]
-  // examples:
-  //   `hyperpower`
-  //   `@company/project`
-  //   `project#1.0.1`
   plugins: ["hyper-solarized-light"],
-
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
