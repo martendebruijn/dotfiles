@@ -1,35 +1,28 @@
-for file in .*;
-do
- if [[ $file == "." || $file == ".." || $file == ".DS_Store" || $file == ".git" ]]; then
-    continue
+Make_links () {
+  if [ $# -ge 1 ]
+  then
+    DIR="$1/"
+  else
+    DIR=""
   fi
-  echo 🔗Linking $file...
-  ln -s $HOME/dotfiles/$file ~/$file
-  echo "✅Link made for $file\r\n"
-done
 
+  for file in .*;
+  do
+    if [[ $file == "." || $file == ".." || $file == ".DS_Store" || $file == ".git" || $file == ".zshenv.example" ]]; then
+      continue
+    fi
+    echo 🔗Linking $file...
+    PATH="$HOME/dotfiles/$DIR$file"
+    ln -s $PATH ~/$file
+    echo "✅Link made for $file\r\n" 
+  done
+}
+
+Make_links
 cd ./zsh
-for file in .*;
-do
- if [[ $file == "." || $file == ".." || $file == ".DS_Store" || $file == ".zshenv.example" ]]; then
-    continue
-  fi
-  echo 🔗Linking $file...
-  ln -s $HOME/dotfiles/zsh/$file ~/$file
-  echo "✅Link made for $file\r\n"
-done
-
+Make_links 'zsh'
 cd ../git
-for file in .*;
-do
- if [[ $file == "." || $file == ".." || $file == ".DS_Store" ]]; then
-    continue
-  fi
-  echo 🔗Linking $file...
-  ln -s $HOME/dotfiles/git/$file ~/$file
-  echo "✅Link made for $file\r\n"
-done
-
+Make_links 'git'
 cd ../
 echo 🤐Creating .zshenv...
 cp ./zsh/.zshenv.example ~/.zshenv
