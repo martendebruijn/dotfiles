@@ -22,6 +22,7 @@ alias update-brewfile="brew bundle dump --force"
 alias gstsa="git stash save"
 alias gadot="git add ."
 alias gblst="git branch --list"
+alias gcz="git cz"
 
 # Yarn
 alias ysb="yarn storybook"
