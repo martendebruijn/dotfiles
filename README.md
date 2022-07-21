@@ -13,7 +13,7 @@ My personal dotfiles
 
 ## Install
 
-Clone the repo. Make sure to clone into `$HOME/`
+Clone the repo.
 
 ```sh
 git clone git@github.com:martendebruijn/dotfiles.git

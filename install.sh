@@ -1,9 +1,9 @@
 Make_links () {
   if [ $# -ge 1 ]
   then
-    DIR="$1/"
+    dir="$1/"
   else
-    DIR=""
+    dir=""
   fi
 
   for file in .*;
@@ -12,8 +12,8 @@ Make_links () {
       continue
     fi
     echo 🔗Linking $file...
-    PATH="$HOME/dotfiles/$DIR$file"
-    ln -s $PATH ~/$file
+    path="$(pwd)/$dir$file"
+    ln -s $path ~/$file
     echo "✅Link made for $file\r\n" 
   done
 }
