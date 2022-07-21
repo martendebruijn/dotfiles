@@ -23,6 +23,8 @@ cd ./zsh
 Make_links 'zsh'
 cd ../git
 Make_links 'git'
+cd ../vue 'vue'
+Make_links 'vue'
 cd ../
 echo 🤐Creating .zshenv...
 cp ./zsh/.zshenv.example ~/.zshenv
@@ -30,6 +32,8 @@ echo "✅Made .zshenv\nPlease enter all the environment variables"
 
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# !! TODO: is this going to work when you don't have a HOMEBREW_GITHUB_ACCESS_TOKEN ?
 
 # Run Brewfile
 brew bundle install --file=./Brewfile
