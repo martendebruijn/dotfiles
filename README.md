@@ -13,11 +13,16 @@ My personal dotfiles
 
 ## Install
 
-Make sure to clone into `$HOME/`
+Clone the repo. Make sure to clone into `$HOME/`
 
 ```sh
 git clone git@github.com:martendebruijn/dotfiles.git
 cd dotfiles
+```
+
+Run install script
+
+```sh
 ./install.sh
 ```
 
