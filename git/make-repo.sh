@@ -1,11 +1,11 @@
 mkdir $1
 cd $1
 git init
+# !! TODO: Generate template README
 echo "# $1" >> README.md
 touch .gitignore
-# Make LICENSE
-git add README.md
-git add .gitignore
+# !! TODO: Choose LICENSE
+git add README.md .gitignore
 # git add LICENSE
 git commit -m "🎉 initial commit"
 # !! TODO: Prompt if I made a repo on github and gitlab
