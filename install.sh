@@ -27,3 +27,9 @@ cd ../
 echo 🤐Creating .zshenv...
 cp ./zsh/.zshenv.example ~/.zshenv
 echo "✅Made .zshenv\nPlease enter all the environment variables"
+
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Run Brewfile
+brew bundle install --file=./Brewfile
