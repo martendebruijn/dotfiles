@@ -1,4 +1,5 @@
 # cd
+# !! TODO: convert to function
 alias devm="cd ~/Documents/business/mozard-coding-projects"
 alias devp="cd ~/Documents/personal/personal-coding-projects"
 alias devmf="cd ~/Documents/business/mozard-coding-projects/mozard-frontend/"
@@ -10,22 +11,17 @@ alias oalias="code ~/.zsh_aliases"
 alias orepo='open $(jq -r ".homepage" package.json)'
 
 # Homebrew
+# [ohmyzsh brew plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/brew)
 alias brew:up="brew update; brew upgrade; brew autoremove; brew cleanup; brew doctor;"
-alias brew:i="brew install"
-alias brew:old="brew outdated"
-alias brew:ui="brew uninstall"
-alias brew:ls="brew list --versions"
-alias brew:ug="brew upgrade"
 alias update-brewfile="brew bundle dump --force"
 
 # Git
-# also see the documentation of the git aliases oh my zsh plugin
-alias gstsa="git stash save"
+# [ohmyzsh git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 alias gadot="git add ."
-alias gblst="git branch --list"
 alias gcz="git cz"
 
 # Yarn
+# [ohmyzsh yarn plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn)
 alias ysb="yarn storybook"
 
 # Misc
