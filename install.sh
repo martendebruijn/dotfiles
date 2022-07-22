@@ -1,3 +1,5 @@
+# Install dotfiles
+# ./install.sh
 Make_links () {
   if [ $# -ge 1 ]
   then
