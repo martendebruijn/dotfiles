@@ -8,6 +8,7 @@ Make_links () {
     dir=""
   fi
 
+  # Make this in a list: "." ".." ".DS_Store" ".git" "*.example"
   for file in .*;
   do
     if [[ $file == "." || $file == ".." || $file == ".DS_Store" || $file == ".git" || $file == ".zshenv.example" ]]; then
@@ -25,7 +26,7 @@ cd ./zsh
 Make_links 'zsh'
 cd ../git
 Make_links 'git'
-cd ../vue 'vue'
+cd ../vue
 Make_links 'vue'
 cd ../
 echo 🤐Creating .zshenv...
