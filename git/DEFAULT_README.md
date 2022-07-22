@@ -32,7 +32,8 @@ git clone git@github.com:martendebruijn/PROJECT_NAME.git
 
 # Gitlab
 git clone git@gitlab.com:martendebruijn/PROJECT_NAME.git
-cd dotfiles
+
+cd PROJECT_NAME
 ```
 
 Install dependencies:
