@@ -35,7 +35,7 @@ git clone git@gitlab.com:martendebruijn/PROJECT_NAME.git
 cd dotfiles
 ```
 
-Haal dependencies binnen:
+Install dependencies:
 
 ```sh
 npm install
