@@ -1,7 +1,10 @@
+# Generate new repository
+# ./make-repo.sh <name> <readme_template>
 mkdir $1
 cd $1
 git init
-# !! TODO: Generate template README
+cp $2 README.md
+sed -i '' 's/PROJECT_NAME/$1/g' README.md
 echo "# $1" >> README.md
 touch .gitignore
 # !! TODO: Choose LICENSE
