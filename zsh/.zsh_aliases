@@ -7,6 +7,7 @@ alias devmf="cd ~/Documents/business/mozard-coding-projects/mozard-frontend/"
 alias ozsh="code ~/.zshrc"
 alias uzsh="source ~/.zshrc"
 alias oalias="code ~/.zsh_aliases"
+alias orepo='open $(jq -r ".homepage" package.json)'
 
 # Homebrew
 alias brew:up="brew update; brew upgrade; brew autoremove; brew cleanup; brew doctor;"
@@ -31,3 +32,4 @@ alias ysb="yarn storybook"
 alias what-time="date '+%H:%M:%S'"
 alias c="clear"
 alias ssha="eval `ssh-agent` ssh-add"
+alias approve="sudo chmod +x"
