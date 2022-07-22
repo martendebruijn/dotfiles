@@ -5,7 +5,7 @@ mkdir $1
 cd $1
 git init
 cp $2 README.md
-sed -i '' 's/PROJECT_NAME/$1/g' README.md
+sed -i '' "s/PROJECT_NAME/$1/g" README.md
 touch .gitignore
 license $3
 git add README.md .gitignore LICENSE
