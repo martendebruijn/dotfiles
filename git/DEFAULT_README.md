@@ -40,6 +40,7 @@ Install dependencies:
 
 ```sh
 npm install
+yarn
 ```
 
 ## Built with
@@ -70,4 +71,4 @@ npm install
 
 ## License
 
-<!-- <NAME_LICENSE>, see [LICENSE](/LICENSE) -->
+NAME_LICENSE, see [LICENSE](/LICENSE)
