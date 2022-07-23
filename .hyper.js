@@ -48,7 +48,13 @@ module.exports = {
     ],
   },
   // format: [@org/]project[#version]
-  plugins: ["hyper-solarized-light"],
+  // Auto switch dark/light theme is not supported, see: [issue](https://github.com/vercel/hyper/issues/6305)
+  // solarized-light has to be command out for it to use the correct header styling
+  // prettier-ignore
+  plugins: [
+    // "hyper-solarized-light",
+    "hyper-solarized-dark",
+  ],
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
