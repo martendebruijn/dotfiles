@@ -119,6 +119,7 @@ export GPG_TTY=$(tty)
 # Functions
 
 function switch-theme () {
+	curr="$(pwd)"
 	cd ~/dotfiles
 	if grep -q '// "hyper-solarized-dark"' ./.hyper.js; then
 		sed -i '' 's#// "hyper-solarized-dark"#"hyper-solarized-dark"#' .hyper.js
@@ -127,4 +128,5 @@ function switch-theme () {
     sed -i '' 's#// "hyper-solarized-light"#"hyper-solarized-light"#' .hyper.js
 		sed -i '' 's# "hyper-solarized-dark"#// "hyper-solarized-dark"#' .hyper.js
 	fi
+	cd $curr
 }
