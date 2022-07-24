@@ -123,10 +123,10 @@ function switch-theme () {
 	cd ~/dotfiles
 	if grep -q '// "hyper-solarized-dark"' ./.hyper.js; then
 		sed -i '' 's#// "hyper-solarized-dark"#"hyper-solarized-dark"#' .hyper.js
-		sed -i '' 's# "hyper-solarized-light"#// "hyper-solarized-light"#' .hyper.js
+		sed -i '' 's#"hyper-solarized-light"#// "hyper-solarized-light"#' .hyper.js
 	else
     sed -i '' 's#// "hyper-solarized-light"#"hyper-solarized-light"#' .hyper.js
-		sed -i '' 's# "hyper-solarized-dark"#// "hyper-solarized-dark"#' .hyper.js
+		sed -i '' 's#"hyper-solarized-dark"#// "hyper-solarized-dark"#' .hyper.js
 	fi
 	cd $curr
 }
