@@ -115,3 +115,16 @@ source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export GPG_TTY=$(tty)
+
+# Functions
+
+function switch-theme () {
+	cd ~/dotfiles
+	if grep -q '// "hyper-solarized-dark"' ./.hyper.js; then
+		sed -i '' 's#// "hyper-solarized-dark"#"hyper-solarized-dark"#' .hyper.js
+		sed -i '' 's# "hyper-solarized-light"#// "hyper-solarized-light"#' .hyper.js
+	else
+    sed -i '' 's#// "hyper-solarized-light"#"hyper-solarized-light"#' .hyper.js
+		sed -i '' 's# "hyper-solarized-dark"#// "hyper-solarized-dark"#' .hyper.js
+	fi
+}
