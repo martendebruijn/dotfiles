@@ -24,6 +24,13 @@ alias gcz="git cz"
 # [ohmyzsh yarn plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn)
 alias ysb="yarn storybook"
 
+# Taskwarrior
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/taskwarrior
+alias t="task"
+
+# Python
+alias python="python3"
+
 # Misc
 alias what-time="date '+%H:%M:%S'"
 alias c="clear"
