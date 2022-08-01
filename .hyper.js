@@ -1,8 +1,7 @@
 module.exports = {
   config: {
     fontSize: 12.5,
-    fontFamily:
-      '"Meslo LG S for Powerline", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+    fontFamily: "MesloLGS NF",
     cursorColor: "rgba(255,255,255,.4)",
     foregroundColor: "rgb(131,148,150)",
     backgroundColor: "#293462",
@@ -52,8 +51,8 @@ module.exports = {
   // solarized-light has to be command out for it to use the correct header styling
   // prettier-ignore
   plugins: [
-    // "hyper-solarized-light",
-    "hyper-solarized-dark",
+"hyper-solarized-light",
+// "hyper-solarized-dark",
   ],
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
