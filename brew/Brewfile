@@ -4,6 +4,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "homebrew/services"
 tap "ngrok/ngrok"
 tap "romkatv/powerlevel10k"
 tap "sass/sass"
@@ -42,6 +43,8 @@ cask "firefox"
 # Web browser
 cask "firefox-developer-edition"
 cask "font-fira-code"
+# Icon set and toolkit
+cask "font-fontawesome"
 cask "font-meslo-for-powerline"
 # Web browser
 cask "google-chrome"
