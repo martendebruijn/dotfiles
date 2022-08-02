@@ -14,6 +14,8 @@ brew "git"
 brew "gnupg"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Exposes your localhost to the world for easy testing and sharing
+brew "localtunnel"
 # Mac App Store command-line interface
 brew "mas"
 # Python version management
