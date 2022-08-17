@@ -7,7 +7,7 @@ alias devmf="cd ~/Documents/business/mozard-coding-projects/mozard-frontend/"
 # Open/update
 alias ozsh="code ~/.zshrc"
 alias uzsh="source ~/.zshrc"
-alias oalias="code ~/.zshalias"
+alias oalias="code ~/dotfiles/zsh/.zshalias"
 alias orepo='open $(jq -r ".homepage" package.json)'
 
 # Homebrew
