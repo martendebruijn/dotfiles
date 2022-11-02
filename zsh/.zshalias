@@ -34,7 +34,9 @@ alias python="python3"
 # Misc
 alias what-time="date '+%H:%M:%S'"
 alias c="clear"
-alias ssha="eval `ssh-agent` ssh-add"
 alias allow="sudo chmod +x"
-alias path="tr ':' '\n' <<< "$PATH""
+alias path="tr ':' '\n' <<< "'$PATH'""
 alias help="tldr"
+
+# Shell scripts
+alias kanikeenkortebroekaan="~/dotfiles/kortebroek.sh"
