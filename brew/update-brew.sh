@@ -1,7 +1,6 @@
-# Update homebrew
-# ./update-brew.sh
+#!/bin/sh
 brew update -q; brew upgrade; brew autoremove; brew cleanup; brew doctor;
-cd ~/dotfiles/brew/
+cd ~/dotfiles/brew/ || exit
 brew bundle dump --force --describe
 if git status -s Brewfile | grep -q 'M Brewfile'; then
   git add Brewfile

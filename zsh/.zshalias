@@ -10,11 +10,6 @@ alias uzsh="source ~/.zshrc"
 alias oalias="code ~/dotfiles/zsh/.zshalias"
 alias orepo='open $(jq -r ".homepage" package.json)'
 
-# Homebrew
-# [ohmyzsh brew plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/brew)
-alias brew:up="brew update; brew upgrade; brew autoremove; brew cleanup; brew doctor;"
-alias update-brewfile="brew bundle dump --force"
-
 # Git
 # [ohmyzsh git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 alias gadot="git add ."
@@ -40,3 +35,4 @@ alias help="tldr"
 
 # Shell scripts
 alias kanikeenkortebroekaan="~/dotfiles/kortebroek.sh"
+alias brew:up="~/dotfiles/brew/update-brew.sh"
