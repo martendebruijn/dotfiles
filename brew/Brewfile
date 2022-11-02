@@ -30,6 +30,8 @@ brew "ruby"
 brew "cocoapods"
 # Isolated development environments using Docker
 brew "docker-compose"
+# Banner-like program prints strings as ASCII art
+brew "figlet"
 # GNU database manager
 brew "gdbm"
 # GNU internationalization (i18n) and localization (l10n) library
@@ -196,3 +198,4 @@ cask "thunderbird"
 cask "visual-studio-code"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock", id: 1402042596
+mas "Xcode", id: 497799835
