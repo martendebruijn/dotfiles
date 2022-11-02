@@ -1,3 +1,6 @@
+### Personal notes
+*.marten.*
+
 ### node modules
 node_modules/*
 
