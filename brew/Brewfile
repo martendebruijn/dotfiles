@@ -112,6 +112,8 @@ brew "sqlite"
 brew "python@3.10"
 # Messaging broker
 brew "rabbitmq"
+# Fork of Heirloom mailx
+brew "s-nail"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 # Feature-rich console based todo list manager
@@ -144,6 +146,7 @@ cask "docker"
 cask "firefox"
 # Web browser
 cask "firefox-developer-edition"
+# Free monospaced font with programming ligatures
 cask "font-fira-code"
 # Icon set and toolkit
 cask "font-fontawesome"
