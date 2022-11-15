@@ -51,9 +51,9 @@ module.exports = {
   // solarized-light has to be command out for it to use the correct header styling
   // prettier-ignore
   plugins: [
-"hyper-solarized-light",
-// "hyper-solarized-dark",
-  ],
+    // "hyper-solarized-dark",
+    "hyper-solarized-light", 
+    "hyper-highlight-active-pane"],
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
