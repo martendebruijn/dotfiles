@@ -1,3 +1,4 @@
+#!/bin/sh
 # cd
 # !! TODO: convert to function
 alias devm="cd ~/Documents/business/mozard-coding-projects"
