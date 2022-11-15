@@ -110,26 +110,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 . ~/dotfiles/zsh/.zshalias
+. ~/dotfiles/zsh/.zshfunctions
 source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export GPG_TTY=$(tty)
-
-# Functions
-
-function switch-theme () {
-	curr="$(pwd)"
-	cd ~/dotfiles
-	if grep -q '// "hyper-solarized-dark"' ./.hyper.js; then
-		sed -i '' 's#// "hyper-solarized-dark"#"hyper-solarized-dark"#' .hyper.js
-		sed -i '' 's#"hyper-solarized-light"#// "hyper-solarized-light"#' .hyper.js
-	else
-    sed -i '' 's#// "hyper-solarized-light"#"hyper-solarized-light"#' .hyper.js
-		sed -i '' 's#"hyper-solarized-dark"#// "hyper-solarized-dark"#' .hyper.js
-	fi
-	cd $curr
-}
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.p10k.zsh.
 [[ ! -f ~/dotfiles/zsh/.p10k.zsh ]] || source ~/dotfiles/zsh/.p10k.zsh
