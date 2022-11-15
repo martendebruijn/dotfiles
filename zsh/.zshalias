@@ -37,3 +37,5 @@ alias help="tldr"
 # Shell scripts
 alias kanikeenkortebroekaan="~/dotfiles/kortebroek.sh"
 alias brew:up="~/dotfiles/brew/update-brew.sh"
+
+alias mac:up="brew:up && npm update -g && softwareupdate -i -a"
