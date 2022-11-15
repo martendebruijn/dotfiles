@@ -39,3 +39,4 @@ alias kanikeenkortebroekaan="~/dotfiles/kortebroek.sh"
 alias brew:up="~/dotfiles/brew/update-brew.sh"
 
 alias mac:up="brew:up && npm update -g && softwareupdate -i -a"
+alias ls="ls -1"
