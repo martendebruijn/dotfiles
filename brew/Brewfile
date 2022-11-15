@@ -201,4 +201,5 @@ cask "thunderbird"
 cask "visual-studio-code"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock", id: 1402042596
+mas "Connective Plugin", id: 1428740565
 mas "Xcode", id: 497799835
