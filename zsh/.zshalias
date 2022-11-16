@@ -38,5 +38,7 @@ alias help="tldr"
 alias kanikeenkortebroekaan="~/dotfiles/kortebroek.sh"
 alias brew:up="~/dotfiles/brew/update-brew.sh"
 
+# softwareupdate -i -a -> geeft geen restart notification in vscode terminal...
 alias mac:up="brew:up && npm update -g && softwareupdate -i -a"
 alias ls="ls -1"
+alias all-work="lp ~/dotfiles/shining.md"
