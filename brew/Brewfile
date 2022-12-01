@@ -20,6 +20,8 @@ brew "brotli"
 brew "c-ares"
 # Mozilla CA certificate store
 brew "ca-certificates"
+# Cross-platform make
+brew "cmake"
 # YAML Parser
 brew "libyaml"
 # Library for command-line editing
@@ -199,6 +201,8 @@ cask "telegram"
 cask "thunderbird"
 # Open-source code editor
 cask "visual-studio-code"
+# Desktop client for WhatsApp
+cask "whatsapp"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock", id: 1402042596
 mas "Connective Plugin", id: 1428740565
