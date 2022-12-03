@@ -122,6 +122,8 @@ brew "speedtest-cli"
 brew "task"
 # Terminal user interface for taskwarrior
 brew "taskwarrior-tui"
+# Programmatically correct mistyped console commands
+brew "thefuck"
 # Simplified and community-driven man pages
 brew "tldr"
 # Clean C library for processing UTF-8 Unicode data
