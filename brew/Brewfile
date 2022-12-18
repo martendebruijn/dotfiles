@@ -32,14 +32,14 @@ brew "ruby"
 brew "cocoapods"
 # Isolated development environments using Docker
 brew "docker-compose"
+# Perl compatible regular expressions library with a new API
+brew "pcre2"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
 # GNU database manager
 brew "gdbm"
 # GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
-# Perl compatible regular expressions library with a new API
-brew "pcre2"
 # Distributed revision control system
 brew "git"
 # GNU multiple precision arithmetic library
@@ -179,6 +179,8 @@ cask "ngrok"
 cask "notion"
 # Monitors computer mic and webcam
 cask "oversight"
+# Collaboration platform for API development
+cask "postman"
 # All-in-one bookmark manager
 cask "raindropio"
 # Protect your personal files
