@@ -142,6 +142,10 @@ brew "sass/sass/sass"
 cask "bartender"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Sci-fi themed terminal emulator and system monitor
+cask "edex-ui"
+# Create and play with small Electron experiments
+cask "electron-fiddle"
 # Web browser
 cask "firefox"
 # Web browser
