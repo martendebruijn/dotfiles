@@ -1,7 +1,8 @@
-#!/bin/zsh
-function switch-theme () {
+#!/bin/bash
+
+function switch-theme {
 	curr="$(pwd)"
-	cd ~/dotfiles
+	cd ~/dotfiles || exit
 	if grep -q '// "hyper-solarized-dark"' ./.hyper.js; then
 		sed -i '' 's#// "hyper-solarized-dark"#"hyper-solarized-dark"#' .hyper.js
 		sed -i '' 's#"hyper-solarized-light"#// "hyper-solarized-light"#' .hyper.js
@@ -9,10 +10,24 @@ function switch-theme () {
     sed -i '' 's#// "hyper-solarized-light"#"hyper-solarized-light"#' .hyper.js
 		sed -i '' 's#"hyper-solarized-dark"#// "hyper-solarized-dark"#' .hyper.js
 	fi
-	cd $curr
+	cd "$curr" || exit
 }
 
 function my-birthday {
 	readonly year=${1:?Year must be specified in yy format.}
-	date -v4d -v9m -v${year}y +%a
+	date -v4d -v9m -v"${year}"y +%a
+}
+
+function hex-to-rgb {
+	readonly hex=${1:?Hex is necessary, without the #, 6 digits necessary}
+	printf "%d %d %d\n" 0x"${hex:0:2}" 0x"${hex:2:2}" 0x"${hex:4:2}"
+}
+
+# Create a data URI from a file
+function datauri() {
+  local mimetype
+  local content
+  mimetype=$(file --brief --no-pad --mime-type "$1")
+  content=$(base64 < "$1")
+  echo "data:$mimetype;base64,$content"
 }
