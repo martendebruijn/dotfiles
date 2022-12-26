@@ -46,3 +46,7 @@ alias nvm:latest="nvm install node --latest-npm --reinstall-packages-from=node"
 
 # Make sure you have installed lts/*
 alias nvm:lts="nvm install --lts node --latest-npm --reinstall-packages-from='lts/*'"
+
+# Dutch commits
+alias gcup="git commit -m '⬆️ chore: dependencies bijwerken'"
+alias gcv="git commit -m '🔂 chore: versienummer ophogen'"
