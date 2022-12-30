@@ -103,6 +103,8 @@ brew "mpdecimal"
 # Text-based UI library
 brew "ncurses"
 # Platform built on V8 to build network applications
+brew "node@16"
+# Platform built on V8 to build network applications
 brew "node@18"
 # Perl compatible regular expressions library
 brew "pcre"
