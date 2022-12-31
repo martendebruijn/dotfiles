@@ -120,8 +120,6 @@ brew "s-nail"
 brew "speedtest-cli"
 # Feature-rich console based todo list manager
 brew "task"
-# Terminal user interface for taskwarrior
-brew "taskwarrior-tui"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Simplified and community-driven man pages
