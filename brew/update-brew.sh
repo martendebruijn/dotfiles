@@ -9,7 +9,7 @@
 # @raycast.author Marten de Bruijn
 # @raycast.authorURL https://www.github.com/martendebruijn
 
-brew update -q; brew upgrade; brew autoremove; brew cleanup; brew doctor;
+brew update -q; brew upgrade --cask --greedy; brew autoremove; brew cleanup; brew doctor;
 cd ~/dotfiles/brew/ || exit
 brew bundle dump --force --describe
 if git status -s Brewfile | grep -q 'M Brewfile'; then
