@@ -1,6 +1,5 @@
 #!/bin/sh
 # cd
-# !! TODO: convert to function
 alias devm="cd ~/Documents/business/mozard-coding-projects"
 alias devp="cd ~/Documents/personal/personal-coding-projects"
 alias devmf="cd ~/Documents/business/mozard-coding-projects/mozard-frontend/"
@@ -20,10 +19,6 @@ alias gcz="git cz"
 # [ohmyzsh yarn plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn)
 alias ysb="yarn storybook"
 
-# Taskwarrior
-# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/taskwarrior
-alias t="task"
-
 # Python
 alias python="python3"
 
@@ -34,11 +29,7 @@ alias allow="sudo chmod +x"
 alias path="tr ':' '\n' <<< "'$PATH'""
 alias help="tldr"
 
-# Shell scripts
-alias kanikeenkortebroekaan="~/dotfiles/kortebroek.sh"
-alias brew:up="~/dotfiles/brew/update-brew.sh"
-
-alias mac:up="brew:up && npm update -g && tldr --update && nvm:latest && nvm:lts && softwareupdate -i -a"
+alias mac:up="install-node-lts && update-brew && npm update -g && tldr --update && nvm:latest && nvm:lts && softwareupdate -i -a"
 alias ls="ls -1"
 alias npm:up="npm update --save"
 alias npm:regen="rm -rf node_modules && rm package-lock.json && npm i"
