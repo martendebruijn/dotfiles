@@ -29,15 +29,15 @@ done
 
 # Update Homebrew
 echo '🍺Updating Homebrew...'
-brew update -q
-echo '⬆️ Upgrade casks and formulae...'
-brew upgrade --cask --greedy -q
+brew update &> '/dev/null'
+echo '⬆️ Upgrade casks and formulae... (greedy apps require reload after update)'
+brew upgrade --cask --greedy &> '/dev/null'
 echo '⬆️ Upgrade apps from Apple store'
 mas upgrade &> '/dev/null'
 echo '🗑️ Uninstall formulae that are no longer needed'
 brew autoremove &> '/dev/null'
 echo '🧹Clean up fromulae and casks'
-brew cleanup -q
+brew cleanup &> '/dev/null'
 if [[ "$brew_path" ]];then
   echo "🍺Creating Brewfile at $brew_path"
   brew bundle dump -f --describe --file="$brew_path/Brewfile"
