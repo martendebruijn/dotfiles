@@ -22,20 +22,10 @@ brew "c-ares"
 brew "ca-certificates"
 # Cross-platform make
 brew "cmake"
-# YAML Parser
-brew "libyaml"
-# Library for command-line editing
-brew "readline"
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
-# Dependency manager for Cocoa projects
-brew "cocoapods"
 # Isolated development environments using Docker
 brew "docker-compose"
 # Perl compatible regular expressions library with a new API
 brew "pcre2"
-# Banner-like program prints strings as ASCII art
-brew "figlet"
 # GNU database manager
 brew "gdbm"
 # GNU internationalization (i18n) and localization (l10n) library
@@ -50,6 +40,8 @@ brew "libtool"
 brew "libunistring"
 # Manage compile and link flags for libraries
 brew "pkg-config"
+# Library for command-line editing
+brew "readline"
 # GNU Ubiquitous Intelligent Language for Extensions
 brew "guile"
 # Asynchronous event library
@@ -92,6 +84,8 @@ brew "jq"
 brew "libffi"
 # Multi-platform support library with a focus on asynchronous I/O
 brew "libuv"
+# YAML Parser
+brew "libyaml"
 # C library for reading, creating, and modifying zip archives
 brew "libzip"
 # Exposes your localhost to the world for easy testing and sharing
@@ -114,12 +108,10 @@ brew "sqlite"
 brew "python@3.10"
 # Messaging broker
 brew "rabbitmq"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
 # Fork of Heirloom mailx
 brew "s-nail"
-# Command-line interface for https://speedtest.net bandwidth tests
-brew "speedtest-cli"
-# Feature-rich console based todo list manager
-brew "task"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Simplified and community-driven man pages
@@ -132,8 +124,6 @@ brew "tmux"
 brew "typescript"
 # UNIX shell (command interpreter)
 brew "zsh"
-# SDK
-brew "dart-lang/dart/dart"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
 # Stylesheet Preprocessor
@@ -142,8 +132,6 @@ brew "sass/sass/sass"
 cask "bartender"
 # App to build and share containerized applications and microservices
 cask "docker"
-# Sci-fi themed terminal emulator and system monitor
-cask "edex-ui"
 # Create and play with small Electron experiments
 cask "electron-fiddle"
 # Web browser
@@ -152,8 +140,6 @@ cask "firefox"
 cask "firefox-developer-edition"
 # Free monospaced font with programming ligatures
 cask "font-fira-code"
-# Icon set and toolkit
-cask "font-fontawesome"
 cask "font-meslo-for-powerline"
 # Web browser
 cask "google-chrome"
@@ -165,8 +151,6 @@ cask "meetingbar"
 cask "microsoft-auto-update"
 # Office suite
 cask "microsoft-office"
-# App to write, plan, collaborate, and get organized
-cask "notion"
 # Monitors computer mic and webcam
 cask "oversight"
 # Collaboration platform for API development
@@ -187,8 +171,6 @@ cask "spotify"
 cask "stack"
 # System monitor for the menu bar
 cask "stats"
-# Remote access and connectivity software focused on security
-cask "teamviewer"
 # Messaging app with a focus on speed and security
 cask "telegram"
 # Customizable email client
