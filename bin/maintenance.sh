@@ -9,6 +9,11 @@
 # @raycast.author Marten de Bruijn
 # @raycast.authorURL https://www.github.com/martendebruijn
 
+print_help() {
+  printf "path [-p] path to save Brewfile\nrepo [-r] push Brewfile to a remote repository. The Brewfile has to be inside a git repository with a remote set and path [-p] is required\nhelp [-h] shows this page" >&2
+  exit 1
+}
+
 while getopts p:rh flag
 do
   case "${flag}" in
@@ -20,11 +25,6 @@ do
   esac
 done
 
-print_help() {
-  printf "path [-p] path to save Brewfile\nrepo [-r] push Brewfile to a remote repository. The Brewfile has to be inside a git repository with a remote set and path [-p] is required\nhelp [-h] shows this page" >&2
-  exit 1
-}
-
 # Add contents from install-node-lts when finished
 
 # Update Homebrew
@@ -33,15 +33,12 @@ brew update -q
 echo '⬆️ Upgrade casks and formulae...'
 brew upgrade --cask --greedy -q
 echo '⬆️ Upgrade apps from Apple store'
-mas upgrade
+mas upgrade &> '/dev/null'
 echo '🗑️ Uninstall formulae that are no longer needed'
 brew autoremove &> '/dev/null'
 echo '🧹Clean up fromulae and casks'
 brew cleanup -q
-echo '🍺Check for potential problems'
-brew doctor
-
-if [ -p "$brew_path" ];then
+if [[ "$brew_path" ]];then
   echo "🍺Creating Brewfile at $brew_path"
   brew bundle dump -f --describe --file="$brew_path/Brewfile"
 
@@ -51,7 +48,7 @@ if [ -p "$brew_path" ];then
       echo '👾Push Brewfile to remote repository'
       git add Brewfile
       git commit -m "🧹 chore(Brewfile): update brewfile"
-      git push -q
+      git push &> '/dev/null'
     else
       echo '✅Brewfile already up to date'
     fi
@@ -59,7 +56,7 @@ if [ -p "$brew_path" ];then
 fi
 
 echo '📦Update global npm packages'
-npm upgrade -g --silent
+npm upgrade -g &> '/dev/null'
 
 echo '🗃️ Update tldr database'
 tldr --update &> '/dev/null'
