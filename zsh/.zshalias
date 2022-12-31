@@ -29,14 +29,10 @@ alias allow="sudo chmod +x"
 alias path="tr ':' '\n' <<< "'$PATH'""
 alias help="tldr"
 
-alias mac:up="install-node-lts && update-brew && npm update -g && tldr --update && nvm:latest && nvm:lts && softwareupdate -i -a"
+alias mac:up="install-node-lts && update-brew && npm update -g && tldr --update && softwareupdate -i -a"
 alias ls="ls -1"
 alias npm:up="npm update --save"
 alias npm:regen="rm -rf node_modules && rm package-lock.json && npm i"
-alias nvm:latest="nvm install node --latest-npm --reinstall-packages-from=node"
-
-# Make sure you have installed lts/*
-alias nvm:lts="nvm install --lts node --latest-npm --reinstall-packages-from='lts/*'"
 
 # Dutch commits
 alias gcup="git commit -m '⬆️ chore: dependencies bijwerken'"
