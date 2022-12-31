@@ -105,10 +105,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 . ~/dotfiles/zsh/.zshalias
 . ~/dotfiles/zsh/.zshfunctions
 source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
