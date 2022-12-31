@@ -19,9 +19,6 @@ alias gcz="git cz"
 # [ohmyzsh yarn plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn)
 alias ysb="yarn storybook"
 
-# Python
-alias python="python3"
-
 # Misc
 alias what-time="date '+%H:%M:%S'"
 alias c="clear"
@@ -29,7 +26,7 @@ alias allow="sudo chmod +x"
 alias path="tr ':' '\n' <<< "'$PATH'""
 alias help="tldr"
 
-alias mac:up="install-node-lts && update-brew && npm update -g && tldr --update && softwareupdate -i -a"
+alias mac:up='maintenance -p $HOME/dotfiles/brew -r'
 alias ls="ls -1"
 alias npm:up="npm update --save"
 alias npm:regen="rm -rf node_modules && rm package-lock.json && npm i"
