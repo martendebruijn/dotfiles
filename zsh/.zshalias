@@ -26,7 +26,7 @@ alias allow="sudo chmod +x"
 alias path="tr ':' '\n' <<< "'$PATH'""
 alias help="tldr"
 
-alias mac:up='maintenance -p $HOME/dotfiles/brew -r'
+alias mac:up='maintenance -rp $HOME/dotfiles/brew'
 alias ls="ls -1"
 alias npm:up="npm update --save"
 alias npm:regen="rm -rf node_modules && rm package-lock.json && npm i"
@@ -34,3 +34,5 @@ alias npm:regen="rm -rf node_modules && rm package-lock.json && npm i"
 # Dutch commits
 alias gcup="git commit -m '⬆️ chore: dependencies bijwerken'"
 alias gcv="git commit -m '🔂 chore: versienummer ophogen'"
+
+alias f="fuck"
