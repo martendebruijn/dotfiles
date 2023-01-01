@@ -7,7 +7,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "ngrok/ngrok"
 tap "romkatv/powerlevel10k"
-tap "sass/sass"
 # Macro processing language
 brew "m4"
 # Automatic configure script builder
@@ -126,8 +125,6 @@ brew "typescript"
 brew "zsh"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
-# Stylesheet Preprocessor
-brew "sass/sass/sass"
 # Menu bar icon organizer
 cask "bartender"
 # App to build and share containerized applications and microservices
