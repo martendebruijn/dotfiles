@@ -1,4 +1,14 @@
 {
   "path": "cz-emoji",
-  "disableScopeLowerCase": true
+  "config": {
+    "cz-emoji": {
+      "skipQuestions": [
+        "issues",
+        "breaking"
+      ],
+      "questions": {
+        "scope": "What is the scope of this change (e.g. component or file name): (press enter to skip)"
+      }
+    }
+  }
 }
