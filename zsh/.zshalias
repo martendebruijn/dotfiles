@@ -32,7 +32,7 @@ alias npm:up="npm update --save"
 alias npm:regen="rm -rf node_modules && rm package-lock.json && npm i"
 
 # Dutch commits
-alias gcup="git commit -m '⬆️ chore: dependencies bijwerken'"
-alias gcv="git commit -m '🔖 chore: versienummer ophogen'"
+alias gcup="git commit -m ':arrow_up: chore: dependencies bijwerken'"
+alias gcv="git commit -m ':bookmark: chore: versienummer ophogen'"
 
 alias f="fuck"
