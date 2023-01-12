@@ -125,6 +125,8 @@ brew "typescript"
 brew "zsh"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
+# Text editor
+cask "010-editor"
 # Menu bar icon organizer
 cask "bartender"
 # App to build and share containerized applications and microservices
@@ -177,4 +179,5 @@ cask "visual-studio-code"
 # Desktop client for WhatsApp
 cask "whatsapp"
 mas "1Password for Safari", id: 1569813296
+mas "MSG Viewer for Outlook", id: 973213640
 mas "Xcode", id: 497799835
