@@ -127,6 +127,8 @@ brew "zsh"
 brew "romkatv/powerlevel10k/powerlevel10k"
 # Text editor
 cask "010-editor"
+# View, print, and comment on PDF documents
+cask "adobe-acrobat-reader"
 # Menu bar icon organizer
 cask "bartender"
 # App to build and share containerized applications and microservices
@@ -179,5 +181,6 @@ cask "visual-studio-code"
 # Desktop client for WhatsApp
 cask "whatsapp"
 mas "1Password for Safari", id: 1569813296
+mas "AdBlock Pro", id: 1018301773
 mas "MSG Viewer for Outlook", id: 973213640
 mas "Xcode", id: 497799835
