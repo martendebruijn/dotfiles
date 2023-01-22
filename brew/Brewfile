@@ -23,12 +23,12 @@ brew "ca-certificates"
 brew "cmake"
 # Isolated development environments using Docker
 brew "docker-compose"
-# Perl compatible regular expressions library with a new API
-brew "pcre2"
 # GNU database manager
 brew "gdbm"
 # GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
+# Perl compatible regular expressions library with a new API
+brew "pcre2"
 # Distributed revision control system
 brew "git"
 # GNU multiple precision arithmetic library
@@ -73,8 +73,6 @@ brew "libusb"
 brew "npth"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c"
 # Regular expressions library
 brew "oniguruma"
 # Lightweight and flexible command-line JSON processor
@@ -105,8 +103,6 @@ brew "pyenv"
 brew "sqlite"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
-# Messaging broker
-brew "rabbitmq"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Fork of Heirloom mailx
@@ -125,16 +121,12 @@ brew "typescript"
 brew "zsh"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
-# Text editor
-cask "010-editor"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # Menu bar icon organizer
 cask "bartender"
 # App to build and share containerized applications and microservices
 cask "docker"
-# Create and play with small Electron experiments
-cask "electron-fiddle"
 # Web browser
 cask "firefox"
 # Web browser
@@ -182,5 +174,4 @@ cask "visual-studio-code"
 cask "whatsapp"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
-mas "MSG Viewer for Outlook", id: 973213640
 mas "Xcode", id: 497799835
