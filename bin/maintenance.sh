@@ -30,8 +30,11 @@ done
 # Update Homebrew
 echo '🍺Updating Homebrew...'
 brew update &> '/dev/null'
-echo '⬆️ Upgrade casks and formulae... (greedy apps require reload after update)'
-brew upgrade --cask --greedy &> '/dev/null'
+# Change to dry-run or something to show which apps can be updated (so you know which apps need to be re-opened)
+# echo '⬆️ Upgrade casks and formulae... (greedy apps require reload after update)'
+# brew upgrade --cask --greedy &> '/dev/null'
+echo '⬆️ Upgrade casks and formulae...'
+brew upgrade --cask &> 'dev/null'
 echo '⬆️ Upgrade apps from Apple store'
 mas upgrade &> '/dev/null'
 echo '🗑️ Uninstall formulae that are no longer needed'
@@ -55,8 +58,9 @@ if [[ "$brew_path" ]];then
   fi
 fi
 
-echo '📦Update global npm packages'
-npm upgrade -g &> '/dev/null'
+# Sometimes deletes global packages
+# echo '📦Update global npm packages'
+# npm upgrade -g &> '/dev/null'
 
 echo '🗃️ Update tldr database'
 tldr --update &> '/dev/null'
