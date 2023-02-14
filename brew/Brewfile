@@ -107,8 +107,6 @@ brew "python@3.10"
 brew "ruby"
 # Fork of Heirloom mailx
 brew "s-nail"
-# User interface to the TELNET protocol
-brew "telnet"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Simplified and community-driven man pages
