@@ -14,6 +14,8 @@ alias orepo='open $(jq -r ".homepage" package.json)'
 # [ohmyzsh git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 alias gadot="git add ."
 alias gcz="git cz"
+alias gcup="git commit -m '⬆️ chore: dependencies bijwerken'"
+alias gcv="git commit -m '🔖 chore: versienummer ophogen'"
 
 # Yarn
 # [ohmyzsh yarn plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn)
@@ -31,8 +33,7 @@ alias ls="ls -1"
 alias npm:up="npm update --save"
 alias npm:regen="rm -rf node_modules && rm package-lock.json && npm i"
 
-# Dutch commits
-alias gcup="git commit -m ':arrow_up: chore: dependencies bijwerken'"
-alias gcv="git commit -m ':bookmark: chore: versienummer ophogen'"
-
 alias f="fuck"
+
+alias python="python3"
+alias py="python3"
