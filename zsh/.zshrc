@@ -13,6 +13,9 @@ export PATH="$PATH:/usr/local/mysql/bin"
 
 export PATH="$PATH:/Users/martendebruijn/Library/Python/3.9/bin"
 
+# Add own scripts
+export PATH="$PATH:/Users/martendebruijn/dotfiles/bin"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/martendebruijn/.oh-my-zsh"
 
