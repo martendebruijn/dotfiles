@@ -39,7 +39,7 @@ echo '⬆️ Upgrade apps from Apple store'
 mas upgrade &> '/dev/null'
 echo '🗑️ Uninstall formulae that are no longer needed'
 brew autoremove &> '/dev/null'
-echo '🧹Clean up fromulae and casks'
+echo '🧹Clean up formulae and casks'
 brew cleanup &> '/dev/null'
 if [[ "$brew_path" ]];then
   echo "🍺Creating Brewfile at $brew_path"
