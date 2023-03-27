@@ -2,7 +2,8 @@
 # cd
 alias devm="cd ~/Documents/business/mozard-coding-projects"
 alias devp="cd ~/Documents/personal/personal-coding-projects"
-alias devmf="cd ~/Documents/business/mozard-coding-projects/mozard-frontend/"
+alias mzfe="cd ~/Documents/business/mozard-coding-projects/mozard-frontend/"
+alias mdcs="cd ~/Documents/business/mozard-coding-projects/conversion-gateway"
 
 # Open/update
 alias ozsh="code ~/.zshrc"
@@ -37,3 +38,6 @@ alias f="fuck"
 
 alias python="python3"
 alias py="python3"
+
+alias add-cz='cp $HOME/Documents/personal/personal-coding-projects/styleguide/docs/.czrc.example .czrc'
+alias add-cz-dutch='cp $HOME/Documents/personal/personal-coding-projects/styleguide/docs/.czrc.dutch.example .czrc'
