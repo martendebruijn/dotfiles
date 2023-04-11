@@ -1,7 +1,7 @@
 [user]
 	name = martendebruijn
 	email = marten@debruijn.io
-	signingkey = F37BDA3A510F8695
+	signingkey = D7BABA6542AE744E3C8BFBD8B254C479EDE8B26D
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = code -w
@@ -11,3 +11,7 @@
 	defaultBranch = main
 [rerere]
 	enabled = true
+[gpg]
+	program = /usr/local/bin/gpg
+[commit]
+	gpgsign = true
