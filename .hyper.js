@@ -1,7 +1,7 @@
 module.exports = {
   config: {
     fontSize: 12.5,
-    fontFamily: "MesloLGS NF",
+    fontFamily: "MesloLGS Nerd Font",
     cursorColor: "rgba(255,255,255,.4)",
     foregroundColor: "rgb(131,148,150)",
     backgroundColor: "#293462",
@@ -47,13 +47,7 @@ module.exports = {
     ],
   },
   // format: [@org/]project[#version]
-  // Auto switch dark/light theme is not supported, see: [issue](https://github.com/vercel/hyper/issues/6305)
-  // solarized-light has to be command out for it to use the correct header styling
-  // prettier-ignore
-  plugins: [
-    // "hyper-solarized-dark",
-    "hyper-solarized-light", 
-    "hyper-highlight-active-pane"],
+  plugins: ["hyper-solarized-light", "hyper-highlight-active-pane"],
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
