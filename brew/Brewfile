@@ -2,6 +2,8 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "romkatv/powerlevel10k"
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
 # Isolated development environments using Docker
 brew "docker-compose"
 # Lightweight and flexible command-line JSON processor
