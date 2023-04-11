@@ -1,0 +1,139 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "ngrok/ngrok"
+tap "romkatv/powerlevel10k"
+# Macro processing language
+brew "m4"
+# Automatic configure script builder
+brew "autoconf"
+# Garbage collector for C and C++
+brew "bdw-gc"
+# Generic-purpose lossless compression algorithm by Google
+brew "brotli"
+# Asynchronous DNS library
+brew "c-ares"
+# Mozilla CA certificate store
+brew "ca-certificates"
+# Cross-platform make
+brew "cmake"
+# Isolated development environments using Docker
+brew "docker-compose"
+# GNU database manager
+brew "gdbm"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext"
+# Perl compatible regular expressions library with a new API
+brew "pcre2"
+# Distributed revision control system
+brew "git"
+# GNU multiple precision arithmetic library
+brew "gmp"
+# Generic library support script
+brew "libtool"
+# C string library for manipulating Unicode strings
+brew "libunistring"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Library for command-line editing
+brew "readline"
+# GNU Ubiquitous Intelligent Language for Extensions
+brew "guile"
+# Asynchronous event library
+brew "libevent"
+# International domain name library (IDNA2008, Punycode and TR46)
+brew "libidn2"
+# HTTP/2 C Library
+brew "libnghttp2"
+# ASN.1 structure parser library
+brew "libtasn1"
+# Low-level cryptographic library
+brew "nettle"
+# Library to load and enumerate PKCS#11 modules
+brew "p11-kit"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Common error values for all GnuPG components
+brew "libgpg-error"
+# Assuan IPC Library
+brew "libassuan"
+# Cryptographic library based on the code from GnuPG
+brew "libgcrypt"
+# X.509 and CMS library
+brew "libksba"
+# Library for USB device access
+brew "libusb"
+# New GNU portable threads library
+brew "npth"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Regular expressions library
+brew "oniguruma"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Portable Foreign Function Interface library
+brew "libffi"
+# Multi-platform support library with a focus on asynchronous I/O
+brew "libuv"
+# YAML Parser
+brew "libyaml"
+# C library for reading, creating, and modifying zip archives
+brew "libzip"
+# Exposes your localhost to the world for easy testing and sharing
+brew "localtunnel"
+# Mac App Store command-line interface
+brew "mas"
+# Library for decimal floating point arithmetic
+brew "mpdecimal"
+# Text-based UI library
+brew "ncurses"
+# Platform built on V8 to build network applications
+brew "node@18"
+# Perl compatible regular expressions library
+brew "pcre"
+# Python version management
+brew "pyenv"
+# Command-line interface for SQLite
+brew "sqlite"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
+# Fork of Heirloom mailx
+brew "s-nail"
+# Programmatically correct mistyped console commands
+brew "thefuck"
+# Simplified and community-driven man pages
+brew "tldr"
+# Clean C library for processing UTF-8 Unicode data
+brew "utf8proc"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Language for application scale JavaScript development
+brew "typescript"
+# UNIX shell (command interpreter)
+brew "zsh"
+# A Zsh Theme
+brew "romkatv/powerlevel10k/powerlevel10k"
+# View, print, and comment on PDF documents
+cask "adobe-acrobat-reader"
+# Free monospaced font with programming ligatures
+cask "font-fira-code"
+cask "font-meslo-for-powerline"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
+# Office suite
+cask "microsoft-office"
+# Monitors computer mic and webcam
+cask "oversight"
+# Protect your personal files
+cask "ransomwhere"
+mas "1Password for Safari", id: 1569813296
+mas "AdBlock Pro", id: 1018301773
+mas "Xcode", id: 497799835
