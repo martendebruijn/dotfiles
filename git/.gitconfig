@@ -1,7 +1,7 @@
 [user]
 	name = martendebruijn
 	email = marten@debruijn.io
-	signingkey = D7BABA6542AE744E3C8BFBD8B254C479EDE8B26D
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDRL9ZwYXC2pCbtJTzXxeS13Jk/Hgh898LNhRHNWMwRv
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = code -w
@@ -12,6 +12,9 @@
 [rerere]
 	enabled = true
 [gpg]
-	program = /usr/local/bin/gpg
+	format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 [commit]
 	gpgsign = true
+	
