@@ -42,6 +42,8 @@ cask "microsoft-auto-update"
 cask "microsoft-office"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Monitors computer mic and webcam
+cask "oversight"
 # Protect your personal files
 cask "ransomwhere"
 # Control your tools with a few keystrokes
