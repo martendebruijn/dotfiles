@@ -1,2 +1,4 @@
 !bin
 .zshenv
+.ssh/*
+!.ssh/config

@@ -5,16 +5,17 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = code -w
-[pull]
-	rebase = false
 [init]
 	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = false
+[commit]
+	gpgsign = true
 [rerere]
 	enabled = true
 [gpg]
 	format = ssh
 [gpg "ssh"]
   program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
-[commit]
-	gpgsign = true
-	
