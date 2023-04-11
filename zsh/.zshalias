@@ -15,8 +15,8 @@ alias orepo='open $(jq -r ".homepage" package.json)'
 # [ohmyzsh git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 alias gadot="git add ."
 alias gcz="git cz"
-alias gcup="git commit -m '⬆️ chore: dependencies bijwerken'"
-alias gcv="git commit -m '🔖 chore: versienummer ophogen'"
+alias gcup="git commit -m 'dependencies bijwerken'"
+alias gcv="git commit -m 'versienummer ophogen'"
 
 # Yarn
 # [ohmyzsh yarn plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn)
