@@ -19,7 +19,7 @@
 [gpg]
 	format = ssh
 [gpg "ssh"]
-  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 [interactive]
 	diffFilter = diff-so-fancy --patch
 [color]
