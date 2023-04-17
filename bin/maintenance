@@ -1,14 +1,5 @@
 #!/bin/bash
 
-# @raycast.schemaVersion 1
-# @raycast.title Maintenance script
-# @raycast.mode fullOutput
-# @raycast.packageName Marten Scripts
-# @raycast.icon ⚙️
-# @raycast.description Maintenance Mac
-# @raycast.author Marten de Bruijn
-# @raycast.authorURL https://www.github.com/martendebruijn
-
 print_help() {
   printf "path [-p] path to save Brewfile\nrepo [-r] push Brewfile to a remote repository. The Brewfile has to be inside a git repository with a remote set and path [-p] is required\nhelp [-h] shows this page" >&2
   exit 1
