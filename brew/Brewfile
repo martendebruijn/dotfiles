@@ -31,6 +31,8 @@ cask "docker"
 # Web browser
 cask "firefox-developer-edition"
 # Developer targeted fonts with a high number of glyphs
+cask "font-fira-code-nerd-font"
+# Developer targeted fonts with a high number of glyphs
 cask "font-meslo-lg-nerd-font"
 # Web browser
 cask "google-chrome"
