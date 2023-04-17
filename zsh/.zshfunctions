@@ -8,3 +8,14 @@ function datauri() {
   content=$(base64 < "$1")
   echo "data:$mimetype;base64,$content"
 }
+
+# Yes these two functions can be one function, however I curr I don't care
+function devm() {
+  local business="$HOME/Documents/business/mozard-coding-projects"
+  cd "$business"/"$1" || exit
+}
+
+function devp() {
+  local personal="$HOME/Documents/personal/personal-coding-projects"
+  cd "$personal"/"$1" || exit
+}
