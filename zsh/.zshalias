@@ -1,9 +1,7 @@
 #!/bin/sh
-# cd
-alias devm="cd ~/Documents/business/mozard-coding-projects"
-alias devp="cd ~/Documents/personal/personal-coding-projects"
-alias mzfe="cd ~/Documents/business/mozard-coding-projects/mozard-frontend/"
-alias mdcs="cd ~/Documents/business/mozard-coding-projects/conversion-gateway"
+# ls
+alias lsdevm="ls ~/Documents/business/mozard-coding-projects"
+alias lsdevp="ls ~/Documents/personal/personal-coding-projects"
 
 # Open/update
 alias ozsh="code ~/.zshrc"
@@ -14,16 +12,10 @@ alias orepo='open $(jq -r ".homepage" package.json)'
 # Git
 # [ohmyzsh git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 alias gadot="git add ."
-alias gcz="git cz"
 alias gcup="git commit -m 'dependencies bijwerken'"
 alias gcv="git commit -m 'versienummer ophogen'"
 
-# Yarn
-# [ohmyzsh yarn plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn)
-alias ysb="yarn storybook"
-
 # Misc
-alias what-time="date '+%H:%M:%S'"
 alias c="clear"
 alias allow="sudo chmod +x"
 alias path="tr ':' '\n' <<< "'$PATH'""
@@ -31,13 +23,12 @@ alias help="tldr"
 
 alias mac:up='maintenance -rp $HOME/dotfiles/brew'
 alias ls="ls -1"
-alias npm:up="npm update --save"
-alias npm:regen="rm -rf node_modules && rm package-lock.json && npm i"
+
+alias npmrmrf="rm -rf node_modules && rm package-lock.json && npm i"
 
 alias f="fuck"
 
+# Python
 alias python="python3"
 alias py="python3"
 
-alias add-cz='cp $HOME/Documents/personal/personal-coding-projects/styleguide/docs/.czrc.example .czrc'
-alias add-cz-dutch='cp $HOME/Documents/personal/personal-coding-projects/styleguide/docs/.czrc.dutch.example .czrc'
