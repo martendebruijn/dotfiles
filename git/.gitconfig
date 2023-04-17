@@ -1,6 +1,6 @@
 [user]
 	name = martendebruijn
-	email = marten@debruijn.io
+	email = martendebruijn@outlook.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDRL9ZwYXC2pCbtJTzXxeS13Jk/Hgh898LNhRHNWMwRv
 [core]
 	excludesfile = ~/.gitignore_global
