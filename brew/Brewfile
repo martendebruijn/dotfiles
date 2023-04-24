@@ -38,6 +38,8 @@ cask "font-meslo-lg-nerd-font"
 cask "google-chrome"
 # Terminal built on web technologies
 cask "hyper"
+# Software for Logitech devices
+cask "logitech-options"
 # Shows the next meeting in the menu bar
 cask "meetingbar"
 # Provides updates to various Microsoft products
