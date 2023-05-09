@@ -11,13 +11,15 @@ brew "jq"
 # Mac App Store command-line interface
 brew "mas"
 # Platform built on V8 to build network applications
-brew "node"
-# Platform built on V8 to build network applications
 brew "node@18"
+# Manage multiple Node.js versions
+brew "nvm"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Simplified and community-driven man pages
 brew "tldr"
+# Language for application scale JavaScript development
+brew "typescript"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
 # Password manager that keeps all passwords secure behind one password
