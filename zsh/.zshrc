@@ -5,10 +5,18 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+function addToPATH {
+  case ":$PATH:" in
+    *":$1:"*) :;; # already there
+    *) PATH="$1:$PATH";; # or PATH="$PATH:$1"
+  esac
+}
+
 # Add own scripts
 addToPATH $HOME/dotfiles/bin
 addToPATH $HOME/sqlcl/bin
-addToPATH $HOME/.oh-my-zsh
+
+export ZSH=$HOME/.oh-my-zsh
 
 # Date format
 HIST_STAMPS="dd.mm.yyyy"
