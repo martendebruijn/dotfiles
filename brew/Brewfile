@@ -2,6 +2,8 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "romkatv/powerlevel10k"
+# Secure runtime for JavaScript and TypeScript
+brew "deno"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
 # Isolated development environments using Docker
@@ -20,8 +22,6 @@ brew "thefuck"
 brew "tldr"
 # Language for application scale JavaScript development
 brew "typescript"
-# JavaScript package manager
-brew "yarn"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
 # Password manager that keeps all passwords secure behind one password
@@ -32,6 +32,8 @@ cask "adobe-acrobat-reader"
 cask "bartender"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Reimagine your terminal
+cask "fig"
 # Web browser
 cask "firefox-developer-edition"
 # Developer targeted fonts with a high number of glyphs
@@ -56,8 +58,6 @@ cask "microsoft-teams"
 cask "oversight"
 # Protect your personal files
 cask "ransomwhere"
-# Control your tools with a few keystrokes
-cask "raycast"
 # Window snapping tool
 cask "rectangle-pro"
 # System monitor for the menu bar
