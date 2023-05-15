@@ -19,3 +19,10 @@ function devp() {
   local personal="$HOME/Documents/personal/personal-coding-projects"
   cd "$personal"/"$1" || exit
 }
+
+function addToPATH {
+  case ":$PATH:" in
+    *":$1:"*) :;; # already there
+    *) PATH="$1:$PATH";; # or PATH="$PATH:$1"
+  esac
+}
