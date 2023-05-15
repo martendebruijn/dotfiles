@@ -32,3 +32,4 @@ alias f="fuck"
 alias python="python3"
 alias py="python3"
 
+alias get-broken-links="find . -type l ! -exec test -e {} \; -print"
