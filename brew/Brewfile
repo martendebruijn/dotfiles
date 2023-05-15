@@ -20,6 +20,8 @@ brew "thefuck"
 brew "tldr"
 # Language for application scale JavaScript development
 brew "typescript"
+# JavaScript package manager
+brew "yarn"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
 # Password manager that keeps all passwords secure behind one password
