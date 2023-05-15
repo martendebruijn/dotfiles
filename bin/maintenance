@@ -16,8 +16,6 @@ do
   esac
 done
 
-# Add contents from install-node-lts when finished
-
 # Update Homebrew
 echo '🍺Updating Homebrew...'
 brew update &> '/dev/null'
@@ -25,7 +23,8 @@ brew update &> '/dev/null'
 # echo '⬆️ Upgrade casks and formulae... (greedy apps require reload after update)'
 # brew upgrade --cask --greedy &> '/dev/null'
 echo '⬆️ Upgrade casks and formulae...'
-brew upgrade --cask &> '/dev/null'
+brew upgrade
+brew upgrade --cask
 echo '⬆️ Upgrade apps from Apple store'
 mas upgrade &> '/dev/null'
 echo '🗑️ Uninstall formulae that are no longer needed'
