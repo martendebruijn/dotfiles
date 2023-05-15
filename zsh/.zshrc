@@ -8,6 +8,9 @@ fi
 # Add own scripts
 export PATH="$PATH:$HOME/dotfiles/bin"
 
+# Add SQLcl bin to path
+export PATH="$PATH:$HOME/sqlcl/bin"
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -109,7 +112,11 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.p10k.zsh.
 [[ ! -f ~/dotfiles/zsh/.p10k.zsh ]] || source ~/dotfiles/zsh/.p10k.zsh
 
-export PATH=/opt/homebrew/opt/node@18/bin:$PATH
 eval $(thefuck --alias)
 # source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+
+# deno completions
+fpath=(~/.zsh $fpath)
+autoload -Uz compinit
+compinit -u
