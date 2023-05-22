@@ -7,7 +7,7 @@ brew "deno"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
 # Isolated development environments using Docker
-brew "docker-compose"
+brew "docker-compose", link: false
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Mac App Store command-line interface
@@ -37,9 +37,15 @@ cask "fig"
 # Web browser
 cask "firefox-developer-edition"
 # Developer targeted fonts with a high number of glyphs
+cask "font-agave-nerd-font"
+# Developer targeted fonts with a high number of glyphs
 cask "font-fira-code-nerd-font"
 # Developer targeted fonts with a high number of glyphs
+cask "font-jetbrains-mono-nerd-font"
+# Developer targeted fonts with a high number of glyphs
 cask "font-meslo-lg-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-roboto-mono-nerd-font"
 # Web browser
 cask "google-chrome"
 # Terminal built on web technologies
@@ -68,5 +74,7 @@ cask "telegram"
 cask "thunderbird"
 # Open-source code editor
 cask "visual-studio-code"
+# Rust-based terminal
+cask "warp"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
