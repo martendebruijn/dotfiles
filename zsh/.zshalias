@@ -13,23 +13,28 @@ alias orepo='open $(jq -r ".homepage" package.json)'
 # [ohmyzsh git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 alias gadot="git add ."
 alias gcup="git commit -m 'dependencies bijwerken'"
+alias gcupp="git commit -m 'update dependencies'"
 alias gcv="git commit -m 'versienummer ophogen'"
+
+# npm
+alias npmrmrf="rm -rf node_modules && rm package-lock.json && npm i"
+alias npmtest="npm run lint && npm run test && npm run build"
+alias npmt="npm run test"
+alias npml="npm run lint"
+alias npmb="npm run build"
+alias npmd="npm run dev"
+alias npms="npm start"
+
+# Python
+alias python="python3"
+alias py="python3"
 
 # Misc
 alias c="clear"
 alias allow="sudo chmod +x"
 alias path="tr ':' '\n' <<< "'$PATH'""
 alias help="tldr"
-
+alias f="fuck"
+alias get-broken-links="find . -type l ! -exec test -e {} \; -print"
 alias mac:up='maintenance -rp $HOME/dotfiles/brew'
 alias ls="ls -1"
-
-alias npmrmrf="rm -rf node_modules && rm package-lock.json && npm i"
-
-alias f="fuck"
-
-# Python
-alias python="python3"
-alias py="python3"
-
-alias get-broken-links="find . -type l ! -exec test -e {} \; -print"
