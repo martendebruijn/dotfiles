@@ -37,8 +37,3 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # Add thefuck
 eval $(thefuck --alias)
-
-# Add Deno completions
-fpath=(~/.zsh $fpath)
-autoload -Uz compinit
-compinit -u
