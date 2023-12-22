@@ -1,0 +1,12 @@
+{
+  "html": {
+    "snippets": {
+      "ull": "ul>li.item${${1:Item $}}*3",
+      "hsf": "header+section+footer",
+      "button": "<button type='button'>${1}</button>"
+    }
+  },
+  "css": {
+    "snippets": {}
+  }
+}
