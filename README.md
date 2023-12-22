@@ -6,12 +6,9 @@ My personal dotfiles
 
 - [dotfiles](#dotfiles)
   - [Table of Contents](#table-of-contents)
-  - [Install](#install)
   - [Contributing](#contributing)
   - [Authors](#authors)
   - [License](#license)
-
-## Install
 
 ## Contributing
 
