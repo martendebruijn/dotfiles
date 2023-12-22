@@ -1,13 +1,23 @@
+tap "dart-lang/dart"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "romkatv/powerlevel10k"
+tap "sass/sass"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
 # Isolated development environments using Docker
 brew "docker-compose", link: false
+# GitHub command-line tool
+brew "gh"
+# Open-source GitLab command-line tool
+brew "glab"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Configurable static site generator
+brew "hugo"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Mac App Store command-line interface
@@ -16,24 +26,28 @@ brew "mas"
 brew "node@18"
 # Manage multiple Node.js versions
 brew "nvm"
+# Theme for zsh
+brew "powerlevel10k"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Simplified and community-driven man pages
 brew "tldr"
 # Language for application scale JavaScript development
 brew "typescript"
-# A Zsh Theme
-brew "romkatv/powerlevel10k/powerlevel10k"
+# Real-time type-ahead completion for Zsh
+brew "zsh-autocomplete"
+# Stylesheet Preprocessor
+brew "sass/sass/sass"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # Menu bar icon organizer
 cask "bartender"
+# Time tracking tool for agencies and freelancers
+cask "clockify"
 # App to build and share containerized applications and microservices
 cask "docker"
-# Reimagine your terminal
-cask "fig"
 # Web browser
 cask "firefox-developer-edition"
 # Developer targeted fonts with a high number of glyphs
@@ -46,10 +60,16 @@ cask "font-jetbrains-mono-nerd-font"
 cask "font-meslo-lg-nerd-font"
 # Developer targeted fonts with a high number of glyphs
 cask "font-roboto-mono-nerd-font"
+# Git client focusing on productivity
+cask "gitkraken"
 # Web browser
 cask "google-chrome"
+# Client for the Google Drive storage service
+cask "google-drive"
 # Terminal built on web technologies
 cask "hyper"
+# HTTP and GraphQL Client
+cask "insomnia"
 # Software for Logitech devices
 cask "logitech-options"
 # Shows the next meeting in the menu bar
@@ -68,6 +88,8 @@ cask "ransomwhere"
 cask "rectangle-pro"
 # System monitor for the menu bar
 cask "stats"
+# Video game digital distribution service
+cask "steam"
 # Messaging app with a focus on speed and security
 cask "telegram"
 # Customizable email client
@@ -76,5 +98,32 @@ cask "thunderbird"
 cask "visual-studio-code"
 # Rust-based terminal
 cask "warp"
+# Native desktop client for WhatsApp
+cask "whatsapp"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
+mas "Structured", id: 1499198946
+vscode "bradlc.vscode-tailwindcss"
+vscode "christian-kohler.npm-intellisense"
+vscode "christian-kohler.path-intellisense"
+vscode "codezombiech.gitignore"
+vscode "DavidAnson.vscode-markdownlint"
+vscode "dbaeumer.vscode-eslint"
+vscode "eamodio.gitlens"
+vscode "EditorConfig.EditorConfig"
+vscode "esbenp.prettier-vscode"
+vscode "heybourn.headwind"
+vscode "humao.rest-client"
+vscode "meganrogge.template-string-converter"
+vscode "mhutchie.git-graph"
+vscode "mrmlnc.vscode-duplicate"
+vscode "pflannery.vscode-versionlens"
+vscode "redhat.vscode-yaml"
+vscode "sidneys1.gitconfig"
+vscode "stackbreak.comment-divider"
+vscode "ultram4rine.vscode-choosealicense"
+vscode "vscode-icons-team.vscode-icons"
+vscode "withfig.fig"
+vscode "wix.vscode-import-cost"
+vscode "yzhang.markdown-all-in-one"
+vscode "ZixuanChen.vitest-explorer"
