@@ -16,8 +16,6 @@ brew "gh"
 brew "glab"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Configurable static site generator
-brew "hugo"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Mac App Store command-line interface
@@ -44,8 +42,6 @@ cask "1password"
 cask "adobe-acrobat-reader"
 # Menu bar icon organizer
 cask "bartender"
-# Time tracking tool for agencies and freelancers
-cask "clockify"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Web browser
@@ -88,8 +84,6 @@ cask "ransomwhere"
 cask "rectangle-pro"
 # System monitor for the menu bar
 cask "stats"
-# Video game digital distribution service
-cask "steam"
 # Messaging app with a focus on speed and security
 cask "telegram"
 # Customizable email client
