@@ -4,6 +4,10 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+ source /usr/local/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
+zstyle ':autocomplete:*complete*:*' insert-unambiguous yes
 
 function addToPATH {
   case ":$PATH:" in
@@ -15,6 +19,7 @@ function addToPATH {
 # Add own scripts
 addToPATH $HOME/dotfiles/bin
 addToPATH $HOME/sqlcl/bin
+addToPATH /usr/local/opt/node@18/bin
 
 export ZSH=$HOME/.oh-my-zsh
 
