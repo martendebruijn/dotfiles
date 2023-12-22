@@ -1,7 +1,7 @@
 module.exports = {
   config: {
     fontSize: 12.5,
-    fontFamily: "MesloLGS Nerd Font",
+    fontFamily: "FiraCode Nerd Font",
     cursorColor: "rgba(255,255,255,.4)",
     foregroundColor: "rgb(131,148,150)",
     backgroundColor: "#293462",
