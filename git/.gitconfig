@@ -14,8 +14,6 @@
 	rebase = false
 [commit]
 	gpgsign = true
-[merge]
-	ff = false
 [rerere]
 	enabled = true
 [gpg]
