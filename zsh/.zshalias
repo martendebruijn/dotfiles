@@ -39,6 +39,14 @@ alias c.="code ."
 alias py="python3"
 alias python="python3"
 
+# Homebrew
+alias brewi="brew install"
+alias brewic="brew install --cask"
+alias brewui="brew uninstall"
+alias brewls="brew list"
+alias brewin="brew info"
+alias brews="brew search"
+
 # Misc
 alias f="fuck"
 alias c="clear"
@@ -48,11 +56,3 @@ alias allow="sudo chmod +x"
 alias path="tr ':' '\n' <<< "'$PATH'""
 alias mac:up='maintenance -rp $HOME/dotfiles/brew'
 alias get-broken-links="find . -type l ! -exec test -e {} \; -print"
-
-# Homebrew
-alias brewi="brew install"
-alias brewic="brew install --cask"
-alias brewui="brew uninstall"
-alias brewls="brew list"
-alias brewin="brew info"
-alias brews="brew search"
