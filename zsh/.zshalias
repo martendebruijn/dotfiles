@@ -36,8 +36,8 @@ alias co="code"
 alias c.="code ."
 
 # Python
-alias python="python3"
 alias py="python3"
+alias python="python3"
 
 # Misc
 alias f="fuck"
