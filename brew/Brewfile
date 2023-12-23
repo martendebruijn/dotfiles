@@ -4,8 +4,9 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "romkatv/powerlevel10k"
 tap "sass/sass"
-# Secure runtime for JavaScript and TypeScript
-brew "deno"
+tap "smartthingscommunity/smartthings"
+# Cross-platform make
+brew "cmake"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
 # Isolated development environments using Docker
@@ -14,18 +15,16 @@ brew "docker-compose", link: false
 brew "gh"
 # Open-source GitLab command-line tool
 brew "glab"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Mac App Store command-line interface
 brew "mas"
 # Platform built on V8 to build network applications
 brew "node@18"
-# Manage multiple Node.js versions
-brew "nvm"
 # Theme for zsh
 brew "powerlevel10k"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Simplified and community-driven man pages
@@ -47,17 +46,9 @@ cask "docker"
 # Web browser
 cask "firefox-developer-edition"
 # Developer targeted fonts with a high number of glyphs
-cask "font-agave-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-fira-code-nerd-font"
 # Developer targeted fonts with a high number of glyphs
-cask "font-jetbrains-mono-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-meslo-lg-nerd-font"
-# Developer targeted fonts with a high number of glyphs
-cask "font-roboto-mono-nerd-font"
-# Git client focusing on productivity
-cask "gitkraken"
 # Web browser
 cask "google-chrome"
 # Client for the Google Drive storage service
@@ -90,8 +81,6 @@ cask "telegram"
 cask "thunderbird"
 # Open-source code editor
 cask "visual-studio-code"
-# Rust-based terminal
-cask "warp"
 # Native desktop client for WhatsApp
 cask "whatsapp"
 mas "1Password for Safari", id: 1569813296
@@ -117,7 +106,6 @@ vscode "sidneys1.gitconfig"
 vscode "stackbreak.comment-divider"
 vscode "ultram4rine.vscode-choosealicense"
 vscode "vscode-icons-team.vscode-icons"
-vscode "withfig.fig"
 vscode "wix.vscode-import-cost"
 vscode "yzhang.markdown-all-in-one"
 vscode "ZixuanChen.vitest-explorer"
