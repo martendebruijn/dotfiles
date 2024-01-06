@@ -47,6 +47,9 @@ alias brewls="brew list"
 alias brewin="brew info"
 alias brews="brew search"
 
+# Ruby
+alias gemi="gem install"
+
 # Misc
 alias f="fuck"
 alias c="clear"
