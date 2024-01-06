@@ -51,6 +51,7 @@ alias brews="brew search"
 alias gemi="gem install"
 
 # Misc
+alias _="sudo"
 alias f="fuck"
 alias c="clear"
 alias ls="ls -1"
