@@ -20,7 +20,7 @@ function addToPATH {
 addToPATH $HOME/dotfiles/bin
 addToPATH $HOME/sqlcl/bin
 addToPATH /usr/local/opt/node@18/bin
-addToPATH /usr/local/opt/ruby/bin:$PATH
+addToPATH $HOME/.rbenv/bin
 
 export ZSH=$HOME/.oh-my-zsh
 

@@ -23,8 +23,8 @@ brew "mas"
 brew "node@18"
 # Theme for zsh
 brew "powerlevel10k"
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
+# Ruby version manager
+brew "rbenv"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Simplified and community-driven man pages
@@ -81,6 +81,8 @@ cask "telegram"
 cask "thunderbird"
 # Open-source code editor
 cask "visual-studio-code"
+# JavaScript IDE
+cask "webstorm"
 # Native desktop client for WhatsApp
 cask "whatsapp"
 mas "1Password for Safari", id: 1569813296
