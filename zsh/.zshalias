@@ -60,3 +60,4 @@ alias allow="sudo chmod +x"
 alias path="tr ':' '\n' <<< "'$PATH'""
 alias mac:up='maintenance -rp $HOME/dotfiles/brew'
 alias get-broken-links="find . -type l ! -exec test -e {} \; -print"
+alias rmrf="rm -rf"
