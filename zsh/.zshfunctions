@@ -10,8 +10,8 @@ function datauri() {
 }
 
 # Yes these two functions can be one function, however I curr I don't care
-function devm() {
-  local business="$HOME/Documents/business/mozard-coding-projects"
+function devb() {
+  local business="$HOME/Documents/business/business-coding-projects"
   cd "$business"/"$1" || exit
 }
 

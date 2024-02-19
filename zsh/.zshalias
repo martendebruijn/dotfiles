@@ -1,6 +1,6 @@
 #!/bin/sh
 # ls
-alias lsdevm="ls ~/Documents/business/mozard-coding-projects"
+alias lsdevb="ls ~/Documents/business/business-coding-projects"
 alias lsdevp="ls ~/Documents/personal/personal-coding-projects"
 
 # Open/update

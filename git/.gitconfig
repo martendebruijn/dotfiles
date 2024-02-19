@@ -1,7 +1,8 @@
-[user]
-	name = Marten de Bruijn
-	email = martendebruijn@outlook.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDRL9ZwYXC2pCbtJTzXxeS13Jk/Hgh898LNhRHNWMwRv
+[includeIf "gitdir/i:~/Documents/personal/personal-coding-projects/"]
+    path = ~/Documents/personal/personal-coding-projects/.gitconfig
+
+[includeIf "gitdir/i:~/Documents/business/business-coding-projects/"]
+    path = ~/Documents/business/business-coding-projects/.gitconfig
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = code -w
