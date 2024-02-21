@@ -30,6 +30,7 @@ alias npmt="npm test"
 alias npmtest="npm run lint && npm test && npm run build"
 alias npmrmrf="rm -rf node_modules && rm package-lock.json && npm i"
 alias npmaf="npm audit fix"
+alias sb="npm run storybook"
 
 # Vscode
 alias co="code"
