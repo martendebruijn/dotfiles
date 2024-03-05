@@ -1,9 +1,7 @@
 tap "dart-lang/dart"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "romkatv/powerlevel10k"
 tap "sass/sass"
@@ -93,6 +91,8 @@ cask "oversight"
 cask "ransomwhere"
 # Window snapping tool
 cask "rectangle-pro"
+# Personal online hard drive to store, view and share files
+cask "stack"
 # System monitor for the menu bar
 cask "stats"
 # Customizable email client
