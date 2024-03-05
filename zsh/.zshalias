@@ -51,6 +51,9 @@ alias brews="brew search"
 # Ruby
 alias gemi="gem install"
 
+# Pitcher
+alias pitcher='php $HOME/Documents/business/business-coding-projects/pitcher-cms/pitcher-creator/pitcher_creator.php'
+
 # Misc
 alias _="sudo"
 alias f="fuck"
