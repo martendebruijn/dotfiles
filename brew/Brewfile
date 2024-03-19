@@ -103,6 +103,7 @@ cask "timing"
 cask "visual-studio-code"
 # Native desktop client for WhatsApp
 cask "whatsapp"
+mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
