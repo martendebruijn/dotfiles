@@ -20,7 +20,7 @@ brew "composer"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
 # Isolated development environments using Docker
-brew "docker-compose", link: false
+brew "docker-compose"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -99,6 +99,8 @@ cask "stats"
 cask "thunderbird"
 # Automatic time and productivity tracking app
 cask "timing"
+# Free and open-source OpenVPN client
+cask "tunnelblick"
 # Open-source code editor
 cask "visual-studio-code"
 # Native desktop client for WhatsApp
