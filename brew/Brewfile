@@ -70,8 +70,6 @@ cask "hyper"
 cask "insomnia"
 # Software for Logitech devices
 cask "logitech-options"
-# Shows the next meeting in the menu bar
-cask "meetingbar"
 # Monitors computer mic and webcam
 cask "oversight"
 # Protect your personal files
