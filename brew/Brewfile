@@ -48,6 +48,8 @@ brew "shivammathur/php/php@8.1"
 brew "shivammathur/php/php@8.2"
 # General-purpose scripting language
 brew "shivammathur/php/php@8.4"
+# Time tracker
+cask "activitywatch"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # Collection of apps and services for photography, design, video, web, and UX
