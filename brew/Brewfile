@@ -58,6 +58,8 @@ cask "adobe-acrobat-reader"
 cask "adobe-creative-cloud"
 # Menu bar icon organiser
 cask "bartender"
+# Test localhost and staging websites
+cask "browserstacklocal"
 # Time tracking tool for agencies and freelancers
 cask "clockify"
 # App to build and share containerised applications and microservices
