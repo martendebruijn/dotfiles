@@ -1,11 +1,14 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/services"
 tap "romkatv/powerlevel10k"
 tap "shivammathur/php"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
+# New way to see and navigate directory trees
+brew "broot"
+# Statistics utility to count lines of code
+brew "cloc"
 # Cross-platform make
 brew "cmake"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -20,6 +23,8 @@ brew "diff-so-fancy"
 brew "docker-compose"
 # Distributed revision control system
 brew "git"
+# Render markdown on the CLI
+brew "glow"
 # Apache HTTP server
 brew "httpd", restart_service: true
 # Lightweight and flexible command-line JSON processor
@@ -28,6 +33,8 @@ brew "jq"
 brew "mas"
 # Open source relational database management system
 brew "mysql"
+# Platform built on V8 to build network applications
+brew "node@20"
 # Theme for zsh
 brew "powerlevel10k"
 # Programmatically correct mistyped console commands
