@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "romkatv/powerlevel10k"
+tap "shivammathur/extensions"
 tap "shivammathur/php"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
@@ -47,6 +48,8 @@ brew "typescript"
 brew "vim"
 # Real-time type-ahead completion for Zsh
 brew "zsh-autocomplete"
+# Mongodb PHP extension
+brew "shivammathur/extensions/mongodb@8.0"
 # General-purpose scripting language
 brew "shivammathur/php/php", link: false
 # General-purpose scripting language
