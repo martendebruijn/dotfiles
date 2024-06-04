@@ -28,6 +28,8 @@ brew "git"
 brew "glow"
 # Apache HTTP server
 brew "httpd", restart_service: true
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Mac App Store command-line interface
@@ -36,6 +38,8 @@ brew "mas"
 brew "mysql"
 # Platform built on V8 to build network applications
 brew "node@20"
+# Manage compile and link flags for libraries
+brew "pkg-config"
 # Theme for zsh
 brew "powerlevel10k"
 # Programmatically correct mistyped console commands
