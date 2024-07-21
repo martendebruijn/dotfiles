@@ -14,6 +14,7 @@ function addToPATH {
     *) PATH="$1:$PATH";; # or PATH="$PATH:$1"
   esac
 }
+
 # Add own scripts
 addToPATH $HOME/Documents/personal/personal-coding-projects/dotfiles/bin
 addToPATH $HOME/sqlcl/bin
@@ -21,6 +22,7 @@ addToPATH $HOME/.rbenv/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export PITCHER_ENVIRONMENT=development
 
 # Date format
 HIST_STAMPS="dd.mm.yyyy"
@@ -47,3 +49,14 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # Add thefuck
 eval $(thefuck --alias)
+eval "$(~/.rbenv/bin/rbenv init - zsh)"
+
+# pnpm
+export PNPM_HOME="/Users/marten/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+source /Users/marten/.config/broot/launcher/bash/br

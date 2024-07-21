@@ -2,14 +2,14 @@
 	name = Marten de Bruijn
 	email = martendebruijn@outlook.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDRL9ZwYXC2pCbtJTzXxeS13Jk/Hgh898LNhRHNWMwRv
-[includeIf "gitdir:~/Documents/business/business-coding-projects/"]
-    path = ~/Documents/business/business-coding-projects/.gitconfig
+[init]
+	defaultBranch = main
+[includeIf "gitdir:~/Documents/Business/business-coding-projects/"]
+    path = ~/Documents/Business/business-coding-projects/.gitconfig
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = code -w
 	pager = diff-so-fancy | less --tabs=4 -RFX
-[init]
-	defaultBranch = main
 [push]
 	autoSetupRemote = true
 [pull]
