@@ -56,6 +56,8 @@ brew "typescript"
 brew "vim"
 # Watch files and take action when they change
 brew "watchman"
+# Command-line interface to Trello
+brew "wrk-trello"
 # Real-time type-ahead completion for Zsh
 brew "zsh-autocomplete"
 # Mongodb PHP extension
@@ -76,6 +78,8 @@ cask "activitywatch"
 cask "adobe-acrobat-reader"
 # Collection of apps and services for photography, design, video, web, and UX
 cask "adobe-creative-cloud"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
 # Menu bar icon organiser
 cask "bartender"
 # Test localhost and staging websites
