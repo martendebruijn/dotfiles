@@ -6,22 +6,11 @@ module.exports = {
     foregroundColor: "rgb(131,148,150)",
     backgroundColor: "#293462",
     borderColor: "rgba(255,255,255,.1)",
+    selectionColor: "#E3CCB2",
     css: `
-      .header_header {
-        background: transparent!important;
-      }
-      .tab_tab {
-        border: 0;
-      }
-      .tab_active::before {
-        border-bottom: 2px solid rgba(255,255,255,.5);
-      }
-      .tab_hasActivity {
-        color: #42a1e4;
-      }
-      .tab_hasActivity:hover {
-        color: #96d4e4;
-      }
+  .term_active {
+    background-color: rgb(40, 44, 52) !important;
+  }
     `,
     termCSS: "",
     padding: "0px 5px",
@@ -46,10 +35,8 @@ module.exports = {
       "#93a1a1",
     ],
   },
-  // format: [@org/]project[#version]
-  plugins: ["hyper-solarized-light", "hyper-highlight-active-pane"],
-  // in development, you can create a directory under
-  // `~/.hyperterm_plugins/local/` and include it here
-  // to load it and avoid it being `npm install`ed
-  localPlugins: [],
+  plugins: [
+  // "hyper-solarized-light", 
+  "hyper-tab-icons", 
+  "hyper-firewatch"],
 };
