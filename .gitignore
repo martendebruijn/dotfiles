@@ -1,4 +1,3 @@
 !bin
 .zshenv
-.ssh/*
-!.ssh/config
+*.*_hidden

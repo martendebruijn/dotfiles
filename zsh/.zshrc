@@ -1,13 +1,16 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# Load [Zsh Autocomplete plugin](https://github.com/marlonrichert/zsh-autocomplete)
+# Keep near the top, before any calls to compdef:
 source ~/Documents/personal/personal-coding-projects/zsh-autocomplete/zsh-autocomplete.plugin.zsh  
-bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
+
+# I don't know the reason for this line anymore:
+# So I'm ignoring it for now until I find out why I put it there (if I ever do, that is)
+# bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
+
+# First insert the common substring in all widgets
 zstyle ':autocomplete:*complete*:*' insert-unambiguous yes
 
+# Add something to $PATH, only when it's not already there
+# This prevents adding duplicates to $PATH whenever source .zshrc is called
 function addToPATH {
   case ":$PATH:" in
     *":$1:"*) :;; # already there
@@ -20,43 +23,39 @@ addToPATH $HOME/Documents/personal/personal-coding-projects/dotfiles/bin
 addToPATH $HOME/sqlcl/bin
 addToPATH $HOME/.rbenv/bin
 
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+# Path to Oh My Zsh installation
+export ZSH="$HOME/Documents/personal/personal-coding-projects/dotfiles/zsh/oh-my-zsh"
+# Path to Oh My Zsh Custom directory
+export ZSH_CUSTOM="$HOME/Documents/personal/personal-coding-projects/dotfiles/zsh/oh-my-zsh/custom"
+
+# Pitcher environment
 export PITCHER_ENVIRONMENT=development
 
 # Date format
 HIST_STAMPS="dd.mm.yyyy"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# Do not enable a oh-my-zsh theme, because we use Starship
+ZSH_THEME=""
 
 # Oh my zsh plugins
 plugins=(
 	git
 )
 
-# Source files
+# Add Oh My Zsh
 source $ZSH/oh-my-zsh.sh
-source $HOME/.zshalias
+
+# Add hidden ZSH aliases
+source $HOME/.zshalias_hidden
+
+# Add ZSH functions
 source $HOME/.zshfunctions
 
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # Add thefuck
 eval $(thefuck --alias)
+
+# Add rbenv
 eval "$(~/.rbenv/bin/rbenv init - zsh)"
 
-# pnpm
-export PNPM_HOME="/Users/marten/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-
-source /Users/marten/.config/broot/launcher/bash/br
+# Use Starship
+eval "$(starship init zsh)"
