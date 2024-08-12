@@ -1,0 +1,1 @@
+alias lns="ln -s"

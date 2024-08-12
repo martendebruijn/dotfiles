@@ -1,0 +1,1 @@
+alias gemi="gem install"

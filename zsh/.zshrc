@@ -24,9 +24,9 @@ addToPATH $HOME/sqlcl/bin
 addToPATH $HOME/.rbenv/bin
 
 # Path to Oh My Zsh installation
-export ZSH="$HOME/Documents/personal/personal-coding-projects/dotfiles/zsh/oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 # Path to Oh My Zsh Custom directory
-export ZSH_CUSTOM="$HOME/Documents/personal/personal-coding-projects/dotfiles/zsh/oh-my-zsh/custom"
+export ZSH_CUSTOM="$HOME/Documents/personal/personal-coding-projects/dotfiles/zsh/custom"
 
 # Pitcher environment
 export PITCHER_ENVIRONMENT=development

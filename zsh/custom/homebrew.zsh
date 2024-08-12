@@ -1,0 +1,6 @@
+alias brewls="brew list"
+alias brewin="brew info"
+alias brews="brew search"
+alias brewi="brew install"
+alias brewui="brew uninstall"
+alias brewic="brew install --cask"
