@@ -20,6 +20,8 @@ brew "composer"
 brew "diff-so-fancy"
 # Isolated development environments using Docker
 brew "docker-compose"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
 # Distributed revision control system
 brew "git"
 # Render markdown on the CLI
