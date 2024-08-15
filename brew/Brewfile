@@ -82,6 +82,8 @@ cask "adobe-creative-cloud"
 cask "balenaetcher"
 # Menu bar icon organiser
 cask "bartender"
+# Display management tool
+cask "betterdisplay"
 # Test localhost and staging websites
 cask "browserstacklocal"
 # Time tracking tool for agencies and freelancers
