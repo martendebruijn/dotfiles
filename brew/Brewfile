@@ -4,6 +4,8 @@ tap "homebrew/services"
 tap "romkatv/powerlevel10k"
 tap "shivammathur/extensions"
 tap "shivammathur/php"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Statistics utility to count lines of code
@@ -91,7 +93,7 @@ cask "clockify"
 # App to build and share containerised applications and microservices
 cask "docker"
 # Web browser
-cask "firefox-developer-edition"
+cask "firefox@developer-edition"
 cask "font-fira-code-nerd-font"
 cask "font-meslo-lg-nerd-font"
 # Client for the Google Drive storage service
@@ -102,6 +104,8 @@ cask "hyper"
 cask "insomnia"
 # Menu bar manager
 cask "jordanbaird-ice"
+# Free cross-platform office suite, fresh version
+cask "libreoffice"
 # Software for Logitech devices
 cask "logitech-options"
 # Monitors computer mic and webcam
@@ -122,6 +126,7 @@ cask "tunnelblick"
 cask "visual-studio-code"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
+mas "AdGuard for Safari", id: 1440147259
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
@@ -134,6 +139,8 @@ vscode "davidanson.vscode-markdownlint"
 vscode "dbaeumer.vscode-eslint"
 vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
 vscode "heybourn.headwind"
 vscode "humao.rest-client"
 vscode "meganrogge.template-string-converter"
