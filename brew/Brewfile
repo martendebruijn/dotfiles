@@ -15,7 +15,7 @@ brew "cmake"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # General-purpose scripting language
-brew "php", link: false
+brew "php"
 # Dependency Manager for PHP
 brew "composer"
 # Good-lookin' diffs with diff-highlight and more
@@ -38,8 +38,6 @@ brew "imagemagick"
 brew "jq"
 # Mac App Store command-line interface
 brew "mas"
-# Open source relational database management system
-brew "mysql"
 # Platform built on V8 to build network applications
 brew "node@20"
 # Manage compile and link flags for libraries
@@ -65,9 +63,9 @@ brew "zsh-autocomplete"
 # Mongodb PHP extension
 brew "shivammathur/extensions/mongodb@8.0"
 # General-purpose scripting language
-brew "shivammathur/php/php", link: false
+brew "shivammathur/php/php"
 # General-purpose scripting language
-brew "shivammathur/php/php@8.0", link: true
+brew "shivammathur/php/php@8.0"
 # General-purpose scripting language
 brew "shivammathur/php/php@8.1"
 # General-purpose scripting language
@@ -118,12 +116,16 @@ cask "rectangle-pro"
 cask "stack"
 # System monitor for the menu bar
 cask "stats"
+# Video game digital distribution service
+cask "steam"
 # Customizable email client
 cask "thunderbird"
 # Free and open-source OpenVPN client
 cask "tunnelblick"
 # Open-source code editor
 cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
 mas "AdGuard for Safari", id: 1440147259
