@@ -45,9 +45,6 @@ plugins=(
 # Add Oh My Zsh
 source $ZSH/oh-my-zsh.sh
 
-# Add hidden ZSH aliases
-source $HOME/.zshalias_hidden
-
 # Add ZSH functions
 source $HOME/.zshfunctions
 
