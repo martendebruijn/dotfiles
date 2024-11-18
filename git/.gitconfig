@@ -39,3 +39,6 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+# Overwrite any credential helpers that are (unknowingly) set by for example Homebrew
+[credential]
+	helper = 
