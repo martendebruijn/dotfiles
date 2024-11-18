@@ -30,12 +30,10 @@ brew "grep"
 brew "httpd", restart_service: true
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
-# Lightweight and flexible command-line JSON processor
-brew "jq"
 # Mac App Store command-line interface
 brew "mas"
 # Platform built on V8 to build network applications
-brew "node@20"
+brew "node@22", link: true
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Theme for zsh
