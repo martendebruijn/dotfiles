@@ -22,6 +22,8 @@ function addToPATH {
 addToPATH $HOME/Documents/personal/personal-coding-projects/dotfiles/bin
 addToPATH $HOME/sqlcl/bin
 addToPATH $HOME/.rbenv/bin
+# Overwrite node@latest, which is installed by homebrew, with node@22
+addToPath /opt/homebrew/opt/node@22/bin
 
 # Path to Oh My Zsh installation
 export ZSH="$HOME/.oh-my-zsh"
