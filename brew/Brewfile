@@ -33,7 +33,7 @@ brew "imagemagick"
 # Mac App Store command-line interface
 brew "mas"
 # Platform built on V8 to build network applications
-brew "node@22", link: true
+brew "node@22"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Theme for zsh
@@ -64,8 +64,6 @@ brew "shivammathur/php/php@8.0"
 brew "shivammathur/php/php@8.1"
 # General-purpose scripting language
 brew "shivammathur/php/php@8.2"
-# General-purpose scripting language
-brew "shivammathur/php/php@8.4"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
