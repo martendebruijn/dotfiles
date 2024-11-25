@@ -8,12 +8,12 @@ tap "shivammathur/php"
 brew "aom"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c@76"
 # Cross-platform make
 brew "cmake"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c@76"
 # Dependency Manager for PHP
 brew "composer"
 # Good-lookin' diffs with diff-highlight and more
@@ -33,7 +33,7 @@ brew "imagemagick"
 # Mac App Store command-line interface
 brew "mas"
 # Platform built on V8 to build network applications
-brew "node@22"
+brew "node@22", link: true
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Theme for zsh
@@ -52,8 +52,6 @@ brew "tree"
 brew "typescript"
 # Vi 'workalike' with many additional features
 brew "vim"
-# Watch files and take action when they change
-brew "watchman"
 # Real-time type-ahead completion for Zsh
 brew "zsh-autocomplete"
 # Mongodb PHP extension
