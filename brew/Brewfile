@@ -33,7 +33,7 @@ brew "imagemagick"
 # Mac App Store command-line interface
 brew "mas"
 # Platform built on V8 to build network applications
-brew "node@22", link: true
+brew "node@22"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Theme for zsh
@@ -79,6 +79,8 @@ cask "clockify"
 # App to build and share containerised applications and microservices
 cask "docker"
 # Web browser
+cask "firefox"
+# Web browser
 cask "firefox@developer-edition"
 cask "font-fira-code-nerd-font"
 cask "font-meslo-lg-nerd-font"
@@ -112,6 +114,10 @@ cask "stats"
 cask "steam"
 # Customizable email client
 cask "thunderbird"
+# Automatic time-tracking application
+cask "timemator"
+# Automatic time and productivity tracking app
+cask "timing"
 # Free and open-source OpenVPN client
 cask "tunnelblick"
 # Open-source code editor
