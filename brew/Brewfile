@@ -32,6 +32,8 @@ brew "httpd", restart_service: true
 brew "imagemagick"
 # Mac App Store command-line interface
 brew "mas"
+# Atlas CLI enables you to manage your MongoDB Atlas
+brew "mongodb-atlas-cli"
 # Platform built on V8 to build network applications
 brew "node@22", link: true
 # Package compiler and linker metadata toolkit
@@ -98,6 +100,8 @@ cask "jordanbaird-ice"
 cask "libreoffice"
 # Software for Logitech devices
 cask "logitech-options"
+# Interactive tool for analyzing MongoDB data
+cask "mongodb-compass"
 # Monitors computer mic and webcam
 cask "oversight"
 # Protect your personal files

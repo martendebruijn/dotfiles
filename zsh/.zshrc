@@ -2,9 +2,8 @@
 # Keep near the top, before any calls to compdef:
 source ~/Documents/personal/personal-coding-projects/zsh-autocomplete/zsh-autocomplete.plugin.zsh  
 
-# I don't know the reason for this line anymore:
-# So I'm ignoring it for now until I find out why I put it there (if I ever do, that is)
-# bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
+# Use the Tab key for menu completion and Shift+Tab to navigate to a list of autocompletions in reverse order
+bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 
 # First insert the common substring in all widgets
 zstyle ':autocomplete:*complete*:*' insert-unambiguous yes
@@ -19,7 +18,6 @@ function addToPATH {
 }
 
 # Add own scripts
-addToPATH $HOME/Documents/personal/personal-coding-projects/dotfiles/bin
 addToPATH $HOME/sqlcl/bin
 addToPATH $HOME/.rbenv/bin
 
@@ -45,9 +43,6 @@ plugins=(
 # Add Oh My Zsh
 source $ZSH/oh-my-zsh.sh
 
-# Add ZSH functions
-source $HOME/.zshfunctions
-
 # Add thefuck
 eval $(thefuck --alias)
 
@@ -56,3 +51,11 @@ eval "$(~/.rbenv/bin/rbenv init - zsh)"
 
 # Use Starship
 eval "$(starship init zsh)"
+
+# pnpm
+export PNPM_HOME="/Users/marten/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
