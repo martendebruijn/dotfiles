@@ -6,4 +6,4 @@ alias rmrf="rm -rf"
 alias allow="sudo chmod +x"
 alias path="tr ':' '\n' <<< "'$PATH'""
 alias get-broken-links="find . -type l ! -exec test -e {} \; -print"
-alias mac:up='maintenance -rp $HOME/Documents/personal/personal-coding-projects/dotfiles/brew'
+alias mac:up='python3 ~/Documents/personal/personal-coding-projects/dotfiles/py_scripts/maintenance.py'
