@@ -19,7 +19,6 @@ function addToPATH {
 }
 
 # Add own scripts
-addToPATH $HOME/Documents/personal/personal-coding-projects/dotfiles/bin
 addToPATH $HOME/sqlcl/bin
 addToPATH $HOME/.rbenv/bin
 
