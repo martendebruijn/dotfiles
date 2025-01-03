@@ -35,7 +35,7 @@ brew "mas"
 # Atlas CLI enables you to manage your MongoDB Atlas
 brew "mongodb-atlas-cli"
 # Platform built on V8 to build network applications
-brew "node@22"
+brew "node@22", link: true
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Theme for zsh
@@ -116,8 +116,6 @@ cask "stack"
 cask "stats"
 # Video game digital distribution service
 cask "steam"
-# Text editor for code, markup and prose
-cask "sublime-text"
 # Customizable email client
 cask "thunderbird"
 # Automatic time-tracking application
