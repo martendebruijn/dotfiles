@@ -55,3 +55,11 @@ eval "$(~/.rbenv/bin/rbenv init - zsh)"
 
 # Use Starship
 eval "$(starship init zsh)"
+
+# pnpm
+export PNPM_HOME="/Users/marten/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
