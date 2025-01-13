@@ -1,0 +1,2 @@
+# Set CMD+Backspace to delete whole line on macOS
+keybind = super+backspace=text:\x15
