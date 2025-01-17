@@ -27,7 +27,7 @@ brew "glow"
 # GNU grep, egrep and fgrep
 brew "grep"
 # Apache HTTP server
-brew "httpd", restart_service: true
+brew "httpd", restart_service: :changed
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Mac App Store command-line interface
@@ -86,6 +86,8 @@ cask "firefox"
 cask "firefox@developer-edition"
 cask "font-fira-code-nerd-font"
 cask "font-meslo-lg-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Web browser
 cask "google-chrome"
 # Client for the Google Drive storage service
