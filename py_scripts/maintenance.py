@@ -53,6 +53,9 @@ def main():
     print("💚 Updating npm")
     run_command("npm i -g npm@latest", capture_output=True)
 
+    print("💚 Updating npm-check-updates")
+    run_command("npm i -g npm-check-updates@latest", capture_output=True)
+
 
 if __name__ == "__main__":
     main()
