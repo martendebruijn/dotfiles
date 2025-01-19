@@ -37,12 +37,7 @@ def main():
         capture_output=True,
     )
 
-    result = subprocess.run(
-        f"git status -s {brewfile_path}/Brewfile",
-        shell=True,
-        text=True,
-        capture_output=True,
-    )
+    result = run_command(f"git status -s {brewfile_path}/Brewfile", capture_output=True)
     if "M brew/Brewfile" in result.stdout:
         print("👾 Push Brewfile to remote repository")
         run_command(f"git add {brewfile_path}/Brewfile", capture_output=True)
