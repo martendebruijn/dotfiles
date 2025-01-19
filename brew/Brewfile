@@ -92,8 +92,6 @@ cask "ghostty"
 cask "google-chrome"
 # Client for the Google Drive storage service
 cask "google-drive"
-# Terminal built on web technologies
-cask "hyper"
 # HTTP and GraphQL Client
 cask "insomnia"
 # Menu bar manager
