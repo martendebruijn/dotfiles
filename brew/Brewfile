@@ -130,6 +130,8 @@ cask "tunnelblick"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+# Multiplayer code editor
+cask "zed"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
 mas "AdGuard for Safari", id: 1440147259
