@@ -1,7 +1,7 @@
 [user]
 	name = Marten de Bruijn
 	email = martendebruijn@outlook.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDRL9ZwYXC2pCbtJTzXxeS13Jk/Hgh898LNhRHNWMwRv
+	signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDRL9ZwYXC2pCbtJTzXxeS13Jk/Hgh898LNhRHNWMwRv
 [init]
 	defaultBranch = main
 [includeIf "gitdir:~/Documents/Business/business-coding-projects/"]
@@ -15,13 +15,15 @@
 [pull]
 	rebase = false
 [commit]
-	gpgsign = true
+	gpgSign = true
 [rerere]
 	enabled = true
 [gpg]
 	format = ssh
+	program = gpg
 [gpg "ssh"]
-	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+	allowedSignersFile = 
 [interactive]
 	diffFilter = diff-so-fancy --patch
 [color]
@@ -42,3 +44,5 @@
 # Overwrite any credential helpers that are (unknowingly) set by for example Homebrew
 [credential]
 	helper = 
+[tag]
+	forceSignAnnotated = false
