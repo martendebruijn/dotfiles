@@ -20,10 +20,12 @@ brew "composer"
 brew "diff-so-fancy"
 # Isolated development environments using Docker
 brew "docker-compose"
+# GitHub command-line tool
+brew "gh"
 # Distributed revision control system
 brew "git"
-# Render markdown on the CLI
-brew "glow"
+# Open-source GitLab command-line tool
+brew "glab"
 # GNU grep, egrep and fgrep
 brew "grep"
 # Apache HTTP server
@@ -36,6 +38,10 @@ brew "mas"
 brew "mongodb-atlas-cli"
 # Platform built on V8 to build network applications
 brew "node@22", link: true
+# Highly capable, feature-rich programming language
+brew "perl"
+# General-purpose scripting language
+brew "php@8.3"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Theme for zsh
@@ -88,6 +94,8 @@ cask "font-fira-code-nerd-font"
 cask "font-meslo-lg-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Git client focusing on productivity
+cask "gitkraken"
 # Web browser
 cask "google-chrome"
 # Client for the Google Drive storage service
