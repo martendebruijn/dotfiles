@@ -1,3 +1,4 @@
+import os
 import subprocess
 
 brewfile_path = "~/Documents/personal/personal-coding-projects/dotfiles/brew"
@@ -15,6 +16,8 @@ def run_command(command, capture_output=False):
 
 
 def main():
+    starting_directory = os.getcwd()
+
     print("🍺 Updating Homebrew")
     run_command("brew update", capture_output=True)
 
@@ -37,12 +40,15 @@ def main():
         capture_output=True,
     )
 
-    result = run_command(f"git status -s {brewfile_path}/Brewfile", capture_output=True)
-    if "M brew/Brewfile" in result.stdout:
+    brewfile_path_user = os.path.expanduser(brewfile_path)
+    os.chdir(brewfile_path_user)
+    result = run_command("git status -s Brewfile", capture_output=True)
+    if "M Brewfile" in result.stdout:
         print("👾 Push Brewfile to remote repository")
         run_command(f"git add {brewfile_path}/Brewfile", capture_output=True)
         run_command('git commit -m "update brewfile"', capture_output=True)
         run_command("git push", capture_output=True)
+    os.chdir(starting_directory)
 
     print("🔄 Relinking node@22")
     run_command("brew link --overwrite node@22", capture_output=True)
