@@ -58,8 +58,6 @@ brew "tldr"
 brew "tree"
 # Language for application scale JavaScript development
 brew "typescript"
-# Vi 'workalike' with many additional features
-brew "vim"
 # Real-time type-ahead completion for Zsh
 brew "zsh-autocomplete"
 # Mongodb PHP extension
@@ -76,16 +74,12 @@ cask "1password"
 cask "1password-cli"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
-# Collection of apps and services for photography, design, video, web, and UX
-cask "adobe-creative-cloud"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Test localhost and staging websites
 cask "browserstacklocal"
 # Time tracking tool for agencies and freelancers
 cask "clockify"
-# App to build and share containerised applications and microservices
-cask "docker"
 # Web browser
 cask "firefox"
 # Web browser
@@ -106,16 +100,10 @@ cask "insomnia"
 cask "jordanbaird-ice"
 # Free cross-platform office suite, fresh version
 cask "libreoffice"
-# Software for Logitech devices
-cask "logitech-options"
-# Interactive tool for analyzing MongoDB data
-cask "mongodb-compass"
 # Monitors computer mic and webcam
 cask "oversight"
 # Protect your personal files
 cask "ransomwhere"
-# Window snapping tool
-cask "rectangle-pro"
 # Team communication and collaboration software
 cask "slack"
 # Personal online hard drive to store, view and share files
@@ -126,8 +114,6 @@ cask "stats"
 cask "steam"
 # Customizable email client
 cask "thunderbird"
-# Automatic time-tracking application
-cask "timemator"
 # Automatic time and productivity tracking app
 cask "timing"
 # Free and open-source OpenVPN client
@@ -136,12 +122,9 @@ cask "tunnelblick"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-# Multiplayer code editor
-cask "zed"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
 mas "AdGuard for Safari", id: 1440147259
-mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 vscode "bradlc.vscode-tailwindcss"
