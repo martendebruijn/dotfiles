@@ -77,7 +77,7 @@ def main():
     print("💚 Updating npm")
     run_command("npm i -g npm@latest", capture_output=True)
 
-    # Update the globally installed npm-check-updates dependencie
+    # Update the globally installed npm-check-updates dependency
     print("💚 Updating npm-check-updates")
     run_command("npm i -g npm-check-updates@latest", capture_output=True)
 
