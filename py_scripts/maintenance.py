@@ -2,6 +2,7 @@ import os
 import subprocess
 
 BREWFILE_PATH = "~/Documents/personal/personal-coding-projects/dotfiles/brew"
+NODE_LTS_VERSION = 22
 
 
 def run_command(command, capture_output=False):
@@ -68,8 +69,8 @@ def main():
     os.chdir(starting_directory)
 
     # Relink the latest Node LTS version, because Homebrew will install the latest one
-    print("🔄 Relinking node@22")
-    run_command("brew link --overwrite node@22", capture_output=True)
+    print(f"🔄 Relinking node@{NODE_LTS_VERSION}")
+    run_command(f"brew link --overwrite node@{NODE_LTS_VERSION}", capture_output=True)
 
     # Update the tldr database
     print("🗃️ Update tldr database")
