@@ -9,8 +9,10 @@ def run_command(command, capture_output=False):
     result = subprocess.run(
         command, shell=True, text=True, capture_output=capture_output
     )
+    # Print error code and stderr when an error occurs
     if result.returncode != 0:
         print(f"Error running command: {command}")
+        print(f"Exit code: {result.returncode}")
         print(result.stderr)
     return result
 
