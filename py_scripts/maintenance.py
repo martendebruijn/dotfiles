@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-brewfile_path = "~/Documents/personal/personal-coding-projects/dotfiles/brew"
+BREWFILE_PATH = "~/Documents/personal/personal-coding-projects/dotfiles/brew"
 
 
 def run_command(command, capture_output=False):
@@ -42,14 +42,14 @@ def main():
     run_command("brew cleanup", capture_output=True)
 
     # Create a Brewfile with descriptions of formulaes
-    print(f"🍺 Creating Brewfile at {brewfile_path}")
+    print(f"🍺 Creating Brewfile at {BREWFILE_PATH}")
     run_command(
-        f"brew bundle dump -f --describe --file={brewfile_path}/Brewfile",
+        f"brew bundle dump -f --describe --file={BREWFILE_PATH}/Brewfile",
         capture_output=True,
     )
 
     # Append Brewfile path with the user path
-    brewfile_path_user = os.path.expanduser(brewfile_path)
+    brewfile_path_user = os.path.expanduser(BREWFILE_PATH)
 
     # Change current directory to wherever the Brewfile lies
     os.chdir(brewfile_path_user)
@@ -60,7 +60,7 @@ def main():
     # If the Brewfile has changed, commit the file and push it to the remote
     if "M Brewfile" in result.stdout:
         print("👾 Push Brewfile to remote repository")
-        run_command(f"git add {brewfile_path}/Brewfile", capture_output=True)
+        run_command(f"git add {BREWFILE_PATH}/Brewfile", capture_output=True)
         run_command('git commit -m "update brewfile"', capture_output=True)
         run_command("git push", capture_output=True)
 
