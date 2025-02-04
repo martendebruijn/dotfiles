@@ -42,7 +42,7 @@ brew "node@22", link: true
 # Highly capable, feature-rich programming language
 brew "perl"
 # General-purpose scripting language
-brew "php@8.3"
+brew "php@8.3", link: true
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Theme for zsh
@@ -83,6 +83,8 @@ cask "balenaetcher"
 cask "browserstacklocal"
 # Time tracking tool for agencies and freelancers
 cask "clockify"
+# Cross-platform Text Expander written in Rust
+cask "espanso"
 # Web browser
 cask "firefox"
 # Web browser
@@ -103,6 +105,10 @@ cask "insomnia"
 cask "jordanbaird-ice"
 # Free cross-platform office suite, fresh version
 cask "libreoffice"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Web browser
+cask "opera"
 # Monitors computer mic and webcam
 cask "oversight"
 # Protect your personal files
