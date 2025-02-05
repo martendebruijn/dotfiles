@@ -83,6 +83,8 @@ cask "balenaetcher"
 cask "browserstacklocal"
 # Time tracking tool for agencies and freelancers
 cask "clockify"
+# Window peeking utility app
+cask "dockdoor"
 # Cross-platform Text Expander written in Rust
 cask "espanso"
 # Web browser
