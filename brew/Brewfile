@@ -1,5 +1,4 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "nikitabobko/tap"
 tap "romkatv/powerlevel10k"
@@ -75,16 +74,6 @@ cask "1password"
 cask "1password-cli"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
-# AeroSpace is an i3-like tiling window manager for macOS
-cask "aerospace"
-# Tool to flash OS images to SD cards & USB drives
-cask "balenaetcher"
-# Test localhost and staging websites
-cask "browserstacklocal"
-# Time tracking tool for agencies and freelancers
-cask "clockify"
-# Window peeking utility app
-cask "dockdoor"
 # Cross-platform Text Expander written in Rust
 cask "espanso"
 # Web browser
@@ -109,8 +98,6 @@ cask "jordanbaird-ice"
 cask "libreoffice"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Web browser
-cask "opera"
 # Monitors computer mic and webcam
 cask "oversight"
 # Protect your personal files
