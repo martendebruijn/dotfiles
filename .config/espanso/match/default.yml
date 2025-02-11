@@ -1,0 +1,9 @@
+matches:
+  - trigger: ":mvg"
+    replace: |
+      Met vriendelijke groet,
+
+      Marten de Bruijn
+  - trigger: ":mdb"
+    replace: Marten de Bruijn
+    
