@@ -37,7 +37,7 @@ brew "mas"
 # Atlas CLI enables you to manage your MongoDB Atlas
 brew "mongodb-atlas-cli"
 # Platform built on V8 to build network applications
-brew "node@22", link: true
+brew "node@22"
 # Highly capable, feature-rich programming language
 brew "perl"
 # General-purpose scripting language
