@@ -1,53 +1,25 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "nikitabobko/tap"
-tap "romkatv/powerlevel10k"
-tap "shivammathur/extensions"
 tap "shivammathur/php"
-# Codec library for encoding and decoding AV1 video streams
-brew "aom"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
-# Cross-platform make
-brew "cmake"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c@76"
-# Dependency Manager for PHP
-brew "composer"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
-# Isolated development environments using Docker
-brew "docker-compose"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
 brew "git"
 # Open-source GitLab command-line tool
 brew "glab"
-# GNU grep, egrep and fgrep
-brew "grep"
-# Apache HTTP server
-brew "httpd", restart_service: :changed
-# Tools and libraries to manipulate images in many formats
-brew "imagemagick"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c@76"
 # Mac App Store command-line interface
 brew "mas"
-# Atlas CLI enables you to manage your MongoDB Atlas
-brew "mongodb-atlas-cli"
-# Platform built on V8 to build network applications
-brew "node@22", link: true
-# Highly capable, feature-rich programming language
-brew "perl"
-# General-purpose scripting language
-brew "php@8.3"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
-# Theme for zsh
-brew "powerlevel10k"
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Programmatically correct mistyped console commands
@@ -60,14 +32,6 @@ brew "tree"
 brew "typescript"
 # Real-time type-ahead completion for Zsh
 brew "zsh-autocomplete"
-# Mongodb PHP extension
-brew "shivammathur/extensions/mongodb@8.0"
-# General-purpose scripting language
-brew "shivammathur/php/php@8.0"
-# General-purpose scripting language
-brew "shivammathur/php/php@8.1"
-# General-purpose scripting language
-brew "shivammathur/php/php@8.2"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
@@ -78,8 +42,6 @@ cask "adobe-acrobat-reader"
 cask "espanso"
 # Web browser
 cask "firefox"
-# Web browser
-cask "firefox@developer-edition"
 cask "font-fira-code-nerd-font"
 cask "font-meslo-lg-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
@@ -88,10 +50,6 @@ cask "ghostty"
 cask "gitkraken"
 # Web browser
 cask "google-chrome"
-# Client for the Google Drive storage service
-cask "google-drive"
-# HTTP and GraphQL Client
-cask "insomnia"
 # Menu bar manager
 cask "jordanbaird-ice"
 # Free cross-platform office suite, fresh version
@@ -100,12 +58,8 @@ cask "libreoffice"
 cask "obsidian"
 # Monitors computer mic and webcam
 cask "oversight"
-# Protect your personal files
-cask "ransomwhere"
 # Window snapping tool
 cask "rectangle-pro"
-# Team communication and collaboration software
-cask "slack"
 # Personal online hard drive to store, view and share files
 cask "stack"
 # System monitor for the menu bar
@@ -114,10 +68,6 @@ cask "stats"
 cask "steam"
 # Customizable email client
 cask "thunderbird"
-# Automatic time and productivity tracking app
-cask "timing"
-# Free and open-source OpenVPN client
-cask "tunnelblick"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
@@ -125,8 +75,6 @@ cask "vlc"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
 mas "AdGuard for Safari", id: 1440147259
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 vscode "astro-build.astro-vscode"
 vscode "bradlc.vscode-tailwindcss"
 vscode "christian-kohler.npm-intellisense"

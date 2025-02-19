@@ -1,6 +1,6 @@
 # Load [Zsh Autocomplete plugin](https://github.com/marlonrichert/zsh-autocomplete)
-# Keep near the top, before any calls to compdef:
-source ~/Documents/personal/personal-coding-projects/zsh-autocomplete/zsh-autocomplete.plugin.zsh  
+# Add at or near the top of your .zshrc file (before any calls to compdef):
+source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Use the Tab key for menu completion and Shift+Tab to navigate to a list of autocompletions in reverse order
 bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
@@ -17,17 +17,8 @@ function addToPATH {
   esac
 }
 
-# Add own scripts
-addToPATH $HOME/sqlcl/bin
-addToPATH $HOME/.rbenv/bin
-
 # Path to Oh My Zsh installation
 export ZSH="$HOME/.oh-my-zsh"
-# Path to Oh My Zsh Custom directory
-export ZSH_CUSTOM="$HOME/Documents/personal/personal-coding-projects/dotfiles/zsh/custom"
-
-# Pitcher environment
-export PITCHER_ENVIRONMENT=development
 
 # Date format
 HIST_STAMPS="dd.mm.yyyy"
@@ -46,16 +37,6 @@ source $ZSH/oh-my-zsh.sh
 # Add thefuck
 eval $(thefuck --alias)
 
-# Add rbenv
-eval "$(~/.rbenv/bin/rbenv init - zsh)"
-
 # Use Starship
 eval "$(starship init zsh)"
 
-# pnpm
-export PNPM_HOME="/Users/marten/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end

@@ -4,8 +4,6 @@
 	signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDRL9ZwYXC2pCbtJTzXxeS13Jk/Hgh898LNhRHNWMwRv
 [init]
 	defaultBranch = main
-[includeIf "gitdir:~/Documents/Business/business-coding-projects/"]
-    path = ~/Documents/Business/business-coding-projects/.gitconfig
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = code -w

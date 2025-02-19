@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-BREWFILE_PATH = "~/Documents/personal/personal-coding-projects/dotfiles/brew"
+BREWFILE_PATH = "~/Documents/code/dotfiles/brew"
 NODE_LTS_VERSION = 22
 
 
