@@ -75,7 +75,7 @@ cask "vlc"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
 mas "AdGuard for Safari", id: 1440147259
-vscode "astro-build.astro-vscode"
+vscode "azemoh.one-monokai"
 vscode "bradlc.vscode-tailwindcss"
 vscode "christian-kohler.npm-intellisense"
 vscode "christian-kohler.path-intellisense"
@@ -97,7 +97,6 @@ vscode "ritwickdey.liveserver"
 vscode "sidneys1.gitconfig"
 vscode "stackbreak.comment-divider"
 vscode "tamasfe.even-better-toml"
-vscode "ulthes.theme-firewatch"
 vscode "ultram4rine.vscode-choosealicense"
 vscode "vitest.explorer"
 vscode "vscode-icons-team.vscode-icons"
