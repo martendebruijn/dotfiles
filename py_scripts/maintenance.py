@@ -2,8 +2,6 @@ import os
 import subprocess
 
 BREWFILE_PATH = "~/Documents/code/dotfiles/brew"
-NODE_LTS_VERSION = 22
-
 
 def run_command(command, capture_output=False):
     """Helper function to run a shell command and optionally capture the output"""
@@ -74,10 +72,6 @@ def main():
 
     # Change the current directory back to the directory where this script was ran
     os.chdir(starting_directory)
-
-    # Relink the latest Node LTS version, because Homebrew will install the latest one
-    print(f"🔄 Relinking node@{NODE_LTS_VERSION}")
-    run_command(f"brew link --overwrite node@{NODE_LTS_VERSION}")
 
     # Update the tldr database
     print("🗃️ Update tldr database")

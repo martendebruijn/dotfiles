@@ -6,5 +6,5 @@ alias rmrf="rm -rf"
 alias allow="sudo chmod +x"
 alias path="tr ':' '\n' <<< "'$PATH'""
 alias get-broken-links="find . -type l ! -exec test -e {} \; -print"
-alias mac:up='python3 ~/Documents/personal/personal-coding-projects/dotfiles/py_scripts/maintenance.py'
+alias mac:up='python3 ~/Documents/code/dotfiles/py_scripts/maintenance.py'
 alias stay-awake="caffeinate -d"
