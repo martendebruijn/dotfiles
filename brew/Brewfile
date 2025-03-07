@@ -20,6 +20,8 @@ brew "icu4c@76"
 brew "mas"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Python interface to Tcl/Tk
+brew "python-tk@3.13"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Programmatically correct mistyped console commands
