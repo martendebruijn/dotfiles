@@ -14,20 +14,28 @@ brew "gh"
 brew "git"
 # Open-source GitLab command-line tool
 brew "glab"
+# Improved top (interactive process viewer)
+brew "htop"
 # C/C++ and Java libraries for Unicode and globalization
 brew "icu4c@76"
 # Mac App Store command-line interface
 brew "mas"
+# Port scanning utility for large networks
+brew "nmap"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Python interface to Tcl/Tk
 brew "python-tk@3.13"
 # Cross-shell prompt for astronauts
 brew "starship"
+# User interface to the TELNET protocol
+brew "telnet"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Simplified and community-driven man pages
 brew "tldr"
+# Terminal multiplexer
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Language for application scale JavaScript development
@@ -38,8 +46,8 @@ brew "zsh-autocomplete"
 cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
-# View, print, and comment on PDF documents
-cask "adobe-acrobat-reader"
+# App to build and share containerised applications and microservices
+cask "docker"
 # Cross-platform Text Expander written in Rust
 cask "espanso"
 # Web browser
@@ -94,6 +102,7 @@ vscode "humao.rest-client"
 vscode "meganrogge.template-string-converter"
 vscode "mhutchie.git-graph"
 vscode "mrmlnc.vscode-duplicate"
+vscode "ms-azuretools.vscode-docker"
 vscode "pflannery.vscode-versionlens"
 vscode "redhat.vscode-yaml"
 vscode "ritwickdey.liveserver"
