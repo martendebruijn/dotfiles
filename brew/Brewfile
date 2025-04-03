@@ -78,6 +78,8 @@ cask "stats"
 cask "steam"
 # Customizable email client
 cask "thunderbird"
+# Virtual machines UI using QEMU
+cask "utm"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
