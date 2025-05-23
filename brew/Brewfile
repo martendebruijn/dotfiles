@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "nikitabobko/tap"
+tap "oven-sh/bun"
 tap "shivammathur/php"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
@@ -42,10 +43,16 @@ brew "tree"
 brew "typescript"
 # Real-time type-ahead completion for Zsh
 brew "zsh-autocomplete"
+# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
+brew "oven-sh/bun/bun"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
+# Collection of apps and services for photography, design, video, web, and UX
+cask "adobe-creative-cloud"
+# Photography workflow application and raw developer
+cask "darktable"
 # App to build and share containerised applications and microservices
 cask "docker"
 # Cross-platform Text Expander written in Rust
@@ -68,6 +75,8 @@ cask "libreoffice"
 cask "obsidian"
 # Monitors computer mic and webcam
 cask "oversight"
+# Control your smart light system
+cask "philips-hue-sync"
 # Window snapping tool
 cask "rectangle-pro"
 # Personal online hard drive to store, view and share files
@@ -87,6 +96,7 @@ cask "vlc"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
 mas "AdGuard for Safari", id: 1440147259
+vscode "astro-build.astro-vscode"
 vscode "azemoh.one-monokai"
 vscode "biomejs.biome"
 vscode "bradlc.vscode-tailwindcss"
@@ -95,6 +105,7 @@ vscode "christian-kohler.path-intellisense"
 vscode "codezombiech.gitignore"
 vscode "davidanson.vscode-markdownlint"
 vscode "dbaeumer.vscode-eslint"
+vscode "docker.docker"
 vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
 vscode "github.copilot"
@@ -112,6 +123,7 @@ vscode "sidneys1.gitconfig"
 vscode "stackbreak.comment-divider"
 vscode "tamasfe.even-better-toml"
 vscode "ultram4rine.vscode-choosealicense"
+vscode "unifiedjs.vscode-mdx"
 vscode "vitest.explorer"
 vscode "vscode-icons-team.vscode-icons"
 vscode "wix.vscode-import-cost"
