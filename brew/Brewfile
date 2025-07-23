@@ -54,7 +54,7 @@ cask "adobe-creative-cloud"
 # Photography workflow application and raw developer
 cask "darktable"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
 # Cross-platform Text Expander written in Rust
 cask "espanso"
 # Web browser
@@ -115,6 +115,7 @@ vscode "humao.rest-client"
 vscode "meganrogge.template-string-converter"
 vscode "mhutchie.git-graph"
 vscode "mrmlnc.vscode-duplicate"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "pflannery.vscode-versionlens"
 vscode "redhat.vscode-yaml"
