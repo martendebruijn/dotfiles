@@ -13,6 +13,8 @@ brew "diff-so-fancy"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Painless self-hosted all-in-one software development service
+brew "gitea"
 # Open-source GitLab command-line tool
 brew "glab"
 # Improved top (interactive process viewer)
@@ -117,6 +119,10 @@ vscode "mhutchie.git-graph"
 vscode "mrmlnc.vscode-duplicate"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
 vscode "pflannery.vscode-versionlens"
 vscode "redhat.vscode-yaml"
 vscode "ritwickdey.liveserver"
