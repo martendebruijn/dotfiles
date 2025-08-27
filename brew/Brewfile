@@ -2,7 +2,6 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
-tap "shivammathur/php"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -25,6 +24,8 @@ brew "icu4c@76"
 brew "mas"
 # Port scanning utility for large networks
 brew "nmap"
+# General-purpose scripting language
+brew "php"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Python interface to Tcl/Tk
@@ -98,6 +99,7 @@ cask "vlc"
 mas "1Password for Safari", id: 1569813296
 mas "AdBlock Pro", id: 1018301773
 mas "AdGuard for Safari", id: 1440147259
+vscode "akamud.vscode-theme-onedark"
 vscode "astro-build.astro-vscode"
 vscode "azemoh.one-monokai"
 vscode "biomejs.biome"
@@ -110,12 +112,15 @@ vscode "dbaeumer.vscode-eslint"
 vscode "docker.docker"
 vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
+vscode "gerane.theme-dracula"
 vscode "github.copilot"
 vscode "github.copilot-chat"
+vscode "github.github-vscode-theme"
 vscode "heybourn.headwind"
 vscode "humao.rest-client"
 vscode "meganrogge.template-string-converter"
 vscode "mhutchie.git-graph"
+vscode "monokai.theme-monokai-pro-vscode"
 vscode "mrmlnc.vscode-duplicate"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
