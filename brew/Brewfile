@@ -16,6 +16,8 @@ brew "git"
 brew "gitea"
 # Open-source GitLab command-line tool
 brew "glab"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Improved top (interactive process viewer)
 brew "htop"
 # C/C++ and Java libraries for Unicode and globalization
@@ -96,9 +98,6 @@ cask "utm"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-mas "1Password for Safari", id: 1569813296
-mas "AdBlock Pro", id: 1018301773
-mas "AdGuard for Safari", id: 1440147259
 vscode "akamud.vscode-theme-onedark"
 vscode "astro-build.astro-vscode"
 vscode "azemoh.one-monokai"
@@ -116,6 +115,7 @@ vscode "gerane.theme-dracula"
 vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.github-vscode-theme"
+vscode "golang.go"
 vscode "heybourn.headwind"
 vscode "humao.rest-client"
 vscode "meganrogge.template-string-converter"
