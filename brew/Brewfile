@@ -1,5 +1,3 @@
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
 # Cryptography and SSL/TLS Toolkit
@@ -80,8 +78,6 @@ cask "libreoffice"
 cask "obsidian"
 # Monitors computer mic and webcam
 cask "oversight"
-# Control your smart light system
-cask "philips-hue-sync"
 # Window snapping tool
 cask "rectangle-pro"
 # Personal online hard drive to store, view and share files
