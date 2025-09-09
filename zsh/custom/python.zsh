@@ -1,5 +1,5 @@
 alias py="python3"
 alias python="python3"
 alias pip="pip3"
-alias venv="source venv/bin/activate"
+alias venva="source venv/bin/activate"
 alias venvc="py -m venv venv"
