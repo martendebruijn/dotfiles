@@ -88,12 +88,19 @@ cask "stats"
 cask "steam"
 # Customizable email client
 cask "thunderbird"
+# Platform for 3D content
+cask "unity"
+# Management tool for Unity
+cask "unity-hub"
 # Virtual machines UI using QEMU
 cask "utm"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+mas "1Password for Safari", id: 1569813296
+mas "AdBlock Pro", id: 1018301773
+mas "AdGuard for Safari", id: 1440147259
 vscode "akamud.vscode-theme-onedark"
 vscode "astro-build.astro-vscode"
 vscode "azemoh.one-monokai"
@@ -136,3 +143,5 @@ vscode "vitest.explorer"
 vscode "vscode-icons-team.vscode-icons"
 vscode "wix.vscode-import-cost"
 vscode "yzhang.markdown-all-in-one"
+go "golang.org/x/tools/gopls"
+go "honnef.co/go/tools/cmd/staticcheck"
