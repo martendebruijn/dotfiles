@@ -54,12 +54,6 @@ cask "1password"
 cask "1password-cli"
 # Collection of apps and services for photography, design, video, web, and UX
 cask "adobe-creative-cloud"
-# Photography workflow application and raw developer
-cask "darktable"
-# App to build and share containerised applications and microservices
-cask "docker-desktop"
-# Cross-platform Text Expander written in Rust
-cask "espanso"
 # Web browser
 cask "firefox"
 cask "font-fira-code-nerd-font"
@@ -88,12 +82,6 @@ cask "stats"
 cask "steam"
 # Customizable email client
 cask "thunderbird"
-# Platform for 3D content
-cask "unity"
-# Management tool for Unity
-cask "unity-hub"
-# Virtual machines UI using QEMU
-cask "utm"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
