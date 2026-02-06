@@ -1,0 +1,39 @@
+#!/bin/bash
+
+LOGFILE="/Users/marten/Documents/Business/business-coding-projects/git-commit-log.md"
+PROJECT_NAME=$(basename "$(git rev-parse --show-toplevel)")
+BRANCH=$(git branch --show-current)
+DATETIME=$(git show -s --format=%ad --date=format:'%Y-%m-%d %H:%M:%S' HEAD)
+DATE=${DATETIME:0:10}
+TIME=${DATETIME:11:8}
+MESSAGE=$(git show -s --format=%s HEAD)
+BODY=$(git show -s --format=%b HEAD)
+
+COMMIT_LINE="- [$PROJECT_NAME] [$BRANCH] $TIME $MESSAGE"
+
+if [ -n "$BODY" ]; then
+    COMMIT_BODY="  $BODY"
+else
+    COMMIT_BODY=""
+fi
+
+if [ ! -f "$LOGFILE" ]; then
+    echo "## $DATE" > "$LOGFILE"
+    echo "$COMMIT_LINE" >> "$LOGFILE"
+    [ -n "$COMMIT_BODY" ] && echo "$COMMIT_BODY" >> "$LOGFILE"
+    echo "" >> "$LOGFILE"
+    exit 0
+fi
+
+if grep -q "## $DATE" "$LOGFILE"; then
+    awk -v date="## $DATE" -v commit="$COMMIT_LINE" -v body="$COMMIT_BODY" '
+    $0 ~ date {print; print commit; if(body!=""){print body}; next}1' "$LOGFILE" > "$LOGFILE.tmp" && mv "$LOGFILE.tmp" "$LOGFILE"
+else
+    {
+        echo "## $DATE"
+        echo "$COMMIT_LINE"
+        [ -n "$COMMIT_BODY" ] && echo "$COMMIT_BODY"
+        echo ""
+        cat "$LOGFILE"
+    } > "$LOGFILE.tmp" && mv "$LOGFILE.tmp" "$LOGFILE"
+fi

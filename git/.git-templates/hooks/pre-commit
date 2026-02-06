@@ -1,0 +1,31 @@
+#!/bin/sh
+
+if [ "$SKIP" = "true" ]; then
+  echo "Pre-commit checks skipped"
+  exit 0
+fi
+
+if [ ! -f package.json ]; then
+  exit 0
+fi
+
+if ! command -v npm >/dev/null 2>&1; then
+  echo "npm not found, skipping lint"
+  exit 0
+fi
+
+if ! npm run | grep -q " lint"; then
+  echo "No lint script found, skipping lint"
+  exit 0
+fi
+
+npm run lint
+STATUS=$?
+
+if [ $STATUS -ne 0 ]; then
+  echo "Linting errors! Commit aborted."
+  echo "Set SKIP=true to bypass this check"
+  exit 1
+fi
+
+exit 0
